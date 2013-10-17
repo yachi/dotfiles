@@ -66,7 +66,7 @@ export MAKE_OPTS="-j 4"
 export LANG=en_US.UTF-8
 source /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 
-eval `dircolors /Users/yachi/github/dircolors-solarized/dircolors.ansi-universal`
+eval `dircolors $HOME/github/dircolors-solarized/dircolors.ansi-universal`
 
 # alias
 alias ls="ls --color=auto"
