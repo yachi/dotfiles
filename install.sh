@@ -1,4 +1,9 @@
 #!/bin/bash
+
+# prerequisite:
+#   homebrew
+#   oh my zsh + zpython
+
 brew install python
 pip show powerline > /dev/null || pip install git+https://github.com/Lokaltog/powerline
 
