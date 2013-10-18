@@ -60,8 +60,13 @@ export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 export PATH="~/bin:$PATH"
+
 export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 export EDITOR="/usr/local/bin/vim"
+
+export ANDROID_HOME="/Applications/Android Studio.app/sdk"
+export PATH="$ANDROID_HOME/tools:$PATH"
+export PATH="$ANDROID_HOME/platform-tools:$PATH"
 
 export MAKE_OPTS="-j 4"
 export LANG=en_US.UTF-8
@@ -72,6 +77,5 @@ eval `dircolors $HOME/github/dircolors-solarized/dircolors.ansi-universal`
 # alias
 alias ls="ls --color=auto"
 alias pie="perl -p -i -e "
-bung () {
-  ag "$@" `bundle show --paths`
-}
+function bung () { ag "$@" `bundle show --paths` }
+function pgradle(){ [ -f gradlew ] && ./gradlew --parallel $@ || gradle --parallel $@ }
