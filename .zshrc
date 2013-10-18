@@ -56,7 +56,8 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-# export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 export PATH="~/bin:$PATH"
 export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
