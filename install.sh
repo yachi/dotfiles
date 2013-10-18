@@ -18,6 +18,11 @@ function log(){
   echo "==================================="
 }
 
+test -d $HOME/.oh-my-zsh || (
+  log "installing oh my zsh"
+  curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
+)
+
 log "installing some packages"
 brew install coreutils
 brew install zsh
