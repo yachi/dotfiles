@@ -24,13 +24,16 @@ test -d $HOME/.oh-my-zsh || (
 )
 
 log "installing some packages"
-brew install coreutils
-brew install zsh
-brew install zpython
-brew install python
-brew install tmux
-brew install grc
-brew install spark
+brew_packages=(
+  coreutils
+  zsh
+  zpython
+  python
+  tmux
+  grc
+  spark
+)
+brew install "${brew_packages[@]}"
 pip show powerline || pip install git+https://github.com/Lokaltog/powerline
 
 log "adding symlinks to $HOME"
