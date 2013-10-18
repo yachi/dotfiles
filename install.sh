@@ -42,5 +42,10 @@ log "initiating submodules"
 init_submodules .
 init_submodules $HOME/.janus
 
+[ "$ZSH_VERSION" = "5.0.2" ] || (
+  log "changing default shell"
+  sudo chsh -s /usr/local/bin/zsh $USER
+)
+
 echo
 echo "Done! Start a new shell to test!"
