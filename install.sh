@@ -4,11 +4,11 @@
 #   homebrew
 #   oh my zsh + zpython
 function init_submodules(){
-  pushd $1
+  cd $1
   git submodule init
   git submodule sync
   git submodule update
-  popd
+  cd -
 }
 
 function log(){
