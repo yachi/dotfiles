@@ -36,3 +36,6 @@ ln -svf "$(pwd)/.janus" $HOME/
 log "initiating submodules"
 init_submodules .
 init_submodules $HOME/.janus
+
+echo
+echo "Done! Start a new shell to test!"
