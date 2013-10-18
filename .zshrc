@@ -87,3 +87,9 @@ alias gfg="git ls-files|ag -i "
 alias pie="perl -p -i -e "
 function bung () { ag "$@" `bundle show --paths` }
 function pgradle(){ [ -f gradlew ] && ./gradlew --parallel $@ || gradle --parallel $@ }
+
+# virtualenv
+VIRTUAL_ENV_DISABLE_PROMPT=true
+# export WORKON_HOME=$HOME/.virtualenvs
+# source /usr/local/bin/virtualenvwrapper.sh
+# workon default
