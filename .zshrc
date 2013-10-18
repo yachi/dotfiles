@@ -83,6 +83,7 @@ eval $(dircolors $HOME/github/dircolors-solarized/dircolors.ansi-universal)
 # alias
 alias ls="ls --color=auto"
 alias crontab="VIM_CRONTAB=true crontab"
+alias gfg="git ls-files|ag -i "
 alias pie="perl -p -i -e "
 function bung () { ag "$@" `bundle show --paths` }
 function pgradle(){ [ -f gradlew ] && ./gradlew --parallel $@ || gradle --parallel $@ }
