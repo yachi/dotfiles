@@ -58,6 +58,10 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
+# some env stuff
+export EDITOR=$(which vim)
+export LANG=en_US.UTF-8
+
 # use bins from coreutils
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
@@ -69,15 +73,14 @@ export PATH="$ANDROID_HOME/platform-tools:$PATH"
 
 # use 4 cores for ruby-build
 export MAKE_OPTS="-j 4"
-export LANG=en_US.UTF-8
 
 # custom bins
 export PATH="~/bin:$PATH"
-export EDITOR=$(which vim)
 
 # enable powerline for zsh
 source /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 
+# use solarized dircolors
 eval $(dircolors $HOME/github/dircolors-solarized/dircolors.ansi-universal)
 
 # alias
