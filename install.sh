@@ -26,10 +26,6 @@ brew install python
 brew install tmux
 pip show powerline || pip install git+https://github.com/Lokaltog/powerline
 
-log "installing solarized dircolors"
-test -d $HOME/github || mkdir -v $HOME/github
-test -d $HOME/github/dircolors-solarized || git clone https://github.com/seebi/dircolors-solarized.git $HOME/github/dircolors-solarized
-
 log "adding symlinks to $HOME"
 ln -svf "$(pwd)/.zshrc" $HOME/
 ln -svf "$(pwd)/.tmux.conf" $HOME/

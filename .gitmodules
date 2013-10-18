@@ -1,3 +1,9 @@
 [submodule ".janus"]
 	path = .janus
 	url = git@github.com:yachi/.janus.git
+[submodule "dircolors-solarized"]
+	path = dircolors-solarized
+	url = https://github.com/seebi/dircolors-solarized.git
+[submodule "pidcat"]
+	path = pidcat
+	url = https://github.com/JakeWharton/pidcat.git

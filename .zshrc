@@ -81,13 +81,15 @@ export PATH="~/bin:$PATH"
 source /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 
 # use solarized dircolors
-eval $(dircolors $HOME/github/dircolors-solarized/dircolors.ansi-universal)
+eval $(dircolors $HOME/github/dotfiles/dircolors-solarized/dircolors.ansi-universal)
 
 # alias
 alias ls="ls --color=auto"
 alias crontab="VIM_CRONTAB=true crontab"
 alias gfg="git ls-files|ag -i "
 alias pie="perl -p -i -e "
+alias lc="python $HOME/github/dotfiles/pidcat/pidcat.py"
+
 function bung () { ag "$@" `bundle show --paths` }
 function pgradle(){ [ -f gradlew ] && ./gradlew --parallel $@ || gradle --parallel $@ }
 
