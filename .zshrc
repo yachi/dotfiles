@@ -53,10 +53,10 @@ plugins=(
   safe-paste
 )
 
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 
 # use bins from coreutils
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
