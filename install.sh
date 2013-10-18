@@ -18,7 +18,9 @@ function log(){
   echo "==================================="
 }
 
-log "installing python and powerline"
+log "installing zsh zpython python powerline"
+brew install zsh
+brew install zpython
 brew install python
 pip show powerline || pip install git+https://github.com/Lokaltog/powerline
 
