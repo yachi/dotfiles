@@ -18,10 +18,12 @@ function log(){
   echo "==================================="
 }
 
-log "installing zsh zpython python powerline"
+log "installing some packages"
+brew install coreutils
 brew install zsh
 brew install zpython
 brew install python
+brew install tmux
 pip show powerline || pip install git+https://github.com/Lokaltog/powerline
 
 log "installing solarized dircolors"
