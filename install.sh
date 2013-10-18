@@ -24,6 +24,8 @@ brew install zsh
 brew install zpython
 brew install python
 brew install tmux
+brew install grc
+brew install spark
 pip show powerline || pip install git+https://github.com/Lokaltog/powerline
 
 log "adding symlinks to $HOME"

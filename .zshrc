@@ -83,6 +83,9 @@ source /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.z
 # use solarized dircolors
 eval $(dircolors $HOME/github/dotfiles/dircolors-solarized/dircolors.ansi-universal)
 
+# enable grc
+source /usr/local/etc/grc.bashrc
+
 # alias
 alias ls="ls --color=auto"
 alias crontab="VIM_CRONTAB=true crontab"
