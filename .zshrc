@@ -58,21 +58,27 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 
+# use bins from coreutils
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
-export PATH="~/bin:$PATH"
-
 export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
-export EDITOR="/usr/local/bin/vim"
 
+# android paths
 export ANDROID_HOME="/Applications/Android Studio.app/sdk"
 export PATH="$ANDROID_HOME/tools:$PATH"
 export PATH="$ANDROID_HOME/platform-tools:$PATH"
 
+# use 4 cores for ruby-build
 export MAKE_OPTS="-j 4"
 export LANG=en_US.UTF-8
+
+# custom bins
+export PATH="~/bin:$PATH"
+export EDITOR=$(which vim)
+
+# enable powerline for zsh
 source /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 
-eval `dircolors $HOME/github/dircolors-solarized/dircolors.ansi-universal`
+eval $(dircolors $HOME/github/dircolors-solarized/dircolors.ansi-universal)
 
 # alias
 alias ls="ls --color=auto"
