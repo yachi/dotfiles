@@ -32,6 +32,7 @@ brew_packages=(
   tmux
   grc
   spark
+  terminal-notifier
 )
 brew install "${brew_packages[@]}"
 pip show powerline || pip install git+https://github.com/Lokaltog/powerline
