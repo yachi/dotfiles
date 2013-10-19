@@ -46,6 +46,9 @@ log "initiating submodules"
 init_submodules .
 init_submodules $HOME/.janus
 
+log "installing crontab"
+crontab "$(pwd)/crontab"
+
 [ "$(zsh --version|cut -f2 -d ' ')" = "5.0.2" ] || (
   log "changing default shell"
   sudo chsh -s /usr/local/bin/zsh $USER
