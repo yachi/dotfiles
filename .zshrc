@@ -46,6 +46,7 @@ alias v=vim
 plugins=(
   git
   git-flow
+  gitignore
   brew
   rbenv
   bundler
