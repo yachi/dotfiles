@@ -48,7 +48,6 @@ plugins=(
   git-flow
   gitignore
   brew
-  rbenv
   bundler
   extract
   safe-paste
