@@ -97,6 +97,13 @@ alias lc="python $HOME/github/dotfiles/pidcat/pidcat.py"
 function bung () { ag "$@" `bundle show --paths` }
 function pgradle(){ [ -f gradlew ] && ./gradlew --parallel $@ || gradle --parallel $@ }
 
+# chruby
+source /usr/local/opt/chruby/share/chruby/chruby.sh
+source /usr/local/opt/chruby/share/chruby/auto.sh
+
+# zfs
+export PATH="$PATH:$HOME/zfs/64/bin"
+
 # virtualenv
 VIRTUAL_ENV_DISABLE_PROMPT=true
 # export WORKON_HOME=$HOME/.virtualenvs
