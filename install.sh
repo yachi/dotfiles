@@ -35,7 +35,7 @@ brew_packages=(
   terminal-notifier
 )
 brew install "${brew_packages[@]}"
-pip show powerline || pip install git+https://github.com/Lokaltog/powerline
+[ -z $(pip show powerline) ] && pip install git+https://github.com/Lokaltog/powerline
 
 log "adding symlinks to $HOME"
 ln -svf "$(pwd)/.zshrc" $HOME/
