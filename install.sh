@@ -11,6 +11,10 @@ function init_submodules(){
   cd -
 }
 
+function symlink_to_home(){
+  ln -svf "$(pwd)/$1" $HOME/
+}
+
 function log(){
   echo
   echo "==================================="
@@ -38,11 +42,11 @@ brew install "${brew_packages[@]}"
 [ -z $(pip show powerline) ] && pip install git+https://github.com/Lokaltog/powerline
 
 log "adding symlinks to $HOME"
-ln -svf "$(pwd)/.zshrc" $HOME/
-ln -svf "$(pwd)/.tmux.conf" $HOME/
-ln -svf "$(pwd)/.janus" $HOME/
-ln -svf "$(pwd)/.janus/.vimrc.after" $HOME/
-ln -svf "$(pwd)/.gemrc" $HOME/
+symlink_to_home .zshrc
+symlink_to_home .tmux.conf
+symlink_to_home .janus
+symlink_to_home .janus/.vimrc.after
+symlink_to_home .gemrc
 
 log "initiating submodules"
 init_submodules .
