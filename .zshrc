@@ -48,6 +48,7 @@ plugins=(
   git-flow
   gitignore
   brew
+  rbenv
   bundler
   extract
   safe-paste
@@ -95,11 +96,6 @@ alias lc="python $HOME/github/dotfiles/pidcat/pidcat.py"
 
 function bung () { ag "$@" `bundle show --paths` }
 function pgradle(){ [ -f gradlew ] && ./gradlew --parallel $@ || gradle --parallel $@ }
-
-# chruby
-source /usr/local/opt/chruby/share/chruby/chruby.sh
-source /usr/local/opt/chruby/share/chruby/auto.sh
-chruby ruby-2.0.0-p247
 
 # virtualenv
 VIRTUAL_ENV_DISABLE_PROMPT=true
