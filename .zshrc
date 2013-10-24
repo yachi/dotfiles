@@ -66,19 +66,19 @@ export EDITOR=$(which vim)
 export LANG=en_US.UTF-8
 
 # use bins from coreutils
-export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 
 # android paths
 export ANDROID_HOME="/Applications/Android Studio.app/sdk"
-export PATH="$ANDROID_HOME/tools:$PATH"
-export PATH="$ANDROID_HOME/platform-tools:$PATH"
+PATH="$ANDROID_HOME/tools:$PATH"
+PATH="$ANDROID_HOME/platform-tools:$PATH"
 
 # use 4 cores for ruby-build
 export MAKE_OPTS="-j 4"
 
 # custom bins
-export PATH="~/bin:$PATH"
+PATH="~/bin:$PATH"
 
 # enable powerline for zsh
 source /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
@@ -91,7 +91,7 @@ source /usr/local/etc/grc.bashrc
 
 # go path
 export GOPATH=~/go
-export PATH="$GOPATH/bin:$PATH"
+PATH="$GOPATH/bin:$PATH"
 
 # alias
 alias ls="ls --color=auto"
