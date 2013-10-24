@@ -44,6 +44,7 @@ alias v=vim
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(
+  go
   git
   git-flow
   gitignore
@@ -87,6 +88,10 @@ eval $(dircolors $HOME/github/dotfiles/dircolors-solarized/dircolors.ansi-univer
 
 # enable grc
 source /usr/local/etc/grc.bashrc
+
+# go path
+export GOPATH=~/go
+export PATH="$GOPATH/bin:$PATH"
 
 # alias
 alias ls="ls --color=auto"
