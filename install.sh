@@ -42,6 +42,7 @@ ln -svf "$(pwd)/.zshrc" $HOME/
 ln -svf "$(pwd)/.tmux.conf" $HOME/
 ln -svf "$(pwd)/.janus" $HOME/
 ln -svf "$(pwd)/.janus/.vimrc.after" $HOME/
+ln -svf "$(pwd)/.gemrc" $HOME/
 
 log "initiating submodules"
 init_submodules .
