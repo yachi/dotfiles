@@ -7,3 +7,6 @@
 [submodule "pidcat"]
 	path = pidcat
 	url = https://github.com/JakeWharton/pidcat.git
+[submodule "powerline-fonts"]
+	path = powerline-fonts
+	url = https://github.com/Lokaltog/powerline-fonts.git

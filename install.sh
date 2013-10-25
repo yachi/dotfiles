@@ -48,6 +48,11 @@ symlink_to_home .janus
 symlink_to_home .janus/.vimrc.after
 symlink_to_home .gemrc
 
+ln -svf "$(pwd)/powerline"
+
+log "installing powerline fonts"
+find powerline-fonts|grep tf$|xargs -I {} cp -v "$(grealpath {})" $HOME/Library/Fonts/
+
 log "initiating submodules"
 init_submodules .
 init_submodules $HOME/.janus
