@@ -1,8 +1,9 @@
 #!/bin/bash
 
 # prerequisite:
-#   homebrew
-#   oh my zsh + zpython
+#   brew doctor: healthy
+#   rbenv ruby ready
+#
 function init_submodules(){
   cd $1
   git submodule init
