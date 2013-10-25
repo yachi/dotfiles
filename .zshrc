@@ -104,6 +104,9 @@ alias lc="python $HOME/github/dotfiles/pidcat/pidcat.py"
 function bung () { ag "$@" `bundle show --paths` }
 function pgradle(){ [ -f gradlew ] && ./gradlew --parallel $@ || gradle --parallel $@ }
 
+# tmpfix for tab autocompletion dircolor
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+
 # virtualenv
 VIRTUAL_ENV_DISABLE_PROMPT=true
 # export WORKON_HOME=$HOME/.virtualenvs
