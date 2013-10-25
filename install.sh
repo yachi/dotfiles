@@ -47,8 +47,7 @@ symlink_to_home .tmux.conf
 symlink_to_home .janus
 symlink_to_home .janus/.vimrc.after
 symlink_to_home .gemrc
-
-ln -svf "$(pwd)/powerline"
+symlink_to_home .gitconfig
 
 log "installing powerline fonts"
 find powerline-fonts|grep tf$|xargs -I {} cp -v "$(grealpath {})" $HOME/Library/Fonts/
