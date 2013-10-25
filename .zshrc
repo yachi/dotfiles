@@ -54,6 +54,7 @@ plugins=(
   extract
   safe-paste
   zeus
+  z
 )
 
 export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin
