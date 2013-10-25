@@ -12,7 +12,7 @@ function init_submodules(){
 }
 
 function symlink_to_home(){
-  ln -svf "$(pwd)/$1" $HOME/
+  ln -svf "$(pwd)/$1" $HOME/$2
 }
 
 function log(){
@@ -48,6 +48,7 @@ symlink_to_home .janus
 symlink_to_home .janus/.vimrc.after
 symlink_to_home .gemrc
 symlink_to_home .gitconfig
+symlink_to_home gitignore .gitignore
 
 log "installing powerline fonts"
 find powerline-fonts|grep tf$|xargs -I {} cp -v "$(grealpath {})" $HOME/Library/Fonts/

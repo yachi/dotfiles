@@ -5,3 +5,5 @@
 	email = yaachi@gmail.com
 [push]
 	default = simple
+[core]
+	excludesfile = ~/.gitignore
