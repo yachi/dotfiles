@@ -75,8 +75,8 @@ export ANDROID_HOME="/Applications/Android Studio.app/sdk"
 PATH="$ANDROID_HOME/tools:$PATH"
 PATH="$ANDROID_HOME/platform-tools:$PATH"
 
-# use 4 cores for ruby-build
-export MAKE_OPTS="-j 4"
+# use 4 cores for make
+export MAKEFLAGS="-j5"
 
 # custom bins
 PATH="~/bin:$PATH"
