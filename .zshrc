@@ -1,4 +1,5 @@
 module_path=($module_path /usr/local/lib/zpython)
+fpath=(/usr/local/share/zsh-completions $fpath)
 
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
@@ -61,6 +62,9 @@ export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+
+# syntax highlight
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # some env stuff
 export EDITOR=$(which vim)
