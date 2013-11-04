@@ -13,7 +13,6 @@ ZSH_THEME="robbyrussell"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias v=vim
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -107,6 +106,13 @@ alias lc="python $HOME/github/dotfiles/pidcat/pidcat.py"
 
 function bung () { ag "$@" `bundle show --paths` }
 function pgradle(){ [ -f gradlew ] && ./gradlew --parallel $@ || gradle --parallel $@ }
+function v(){
+  if [[ -z $@ ]]; then
+    vim .
+  else
+    vim $@
+  fi
+}
 
 # tmpfix for tab autocompletion dircolor
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
