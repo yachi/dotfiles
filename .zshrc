@@ -105,7 +105,13 @@ alias pie="perl -p -i -e "
 alias lc="python $HOME/github/dotfiles/pidcat/pidcat.py"
 
 function bung () { ag "$@" `bundle show --paths` }
-function pgradle(){ [ -f gradlew ] && ./gradlew --parallel $@ || gradle --parallel $@ }
+function pg(){
+  if [[ -f gradlew ]]; then
+    ./gradlew --parallel $@
+  else
+    gradle --parallel $@
+  fi
+}
 function v(){
   if [[ -z $@ ]]; then
     vim .
