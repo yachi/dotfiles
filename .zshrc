@@ -103,6 +103,7 @@ alias crontab="VIM_CRONTAB=true crontab"
 alias gfg="git ls-files|ag -i "
 alias pie="perl -p -i -e "
 alias lc="python $HOME/github/dotfiles/pidcat/pidcat.py"
+alias tarxz='tar --use-compress-program=pxz'
 
 function bung () { ag "$@" `bundle show --paths` }
 function pg(){
