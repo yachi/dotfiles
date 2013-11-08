@@ -120,6 +120,10 @@ function v(){
     vim $@
   fi
 }
+function ad(){
+  adb -d shell "run-as $1 cat /data/data/$1/databases/bubu.db> /sdcard/database.sqlite"
+  adb pull /sdcard/database.sqlite ./$1.sqlite
+}
 
 # tmpfix for tab autocompletion dircolor
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
