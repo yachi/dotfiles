@@ -52,12 +52,12 @@ symlink_to_home .gitconfig
 symlink_to_home .sbtconfig
 symlink_to_home gitignore .gitignore
 
-log "installing powerline fonts"
-find powerline-fonts|grep tf$|xargs -I {} cp -v "$(grealpath {})" $HOME/Library/Fonts/
-
 log "initiating submodules"
 init_submodules .
 init_submodules $HOME/.janus
+
+log "installing powerline fonts"
+find powerline-fonts|grep tf$|xargs -I {} cp -v "$(grealpath {})" $HOME/Library/Fonts/
 
 log "installing crontab"
 crontab "$(pwd)/crontab"
