@@ -124,6 +124,9 @@ function ad(){
   adb -d shell "run-as $1 cat /data/data/$1/databases/$2 > /sdcard/database.sqlite"
   adb pull /sdcard/database.sqlite ./$1.$2.sqlite
 }
+function adcat(){
+  adb -d shell "run-as $1 cat /data/data/$1/databases/$2"
+}
 
 # tmpfix for tab autocompletion dircolor
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
