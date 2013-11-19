@@ -52,6 +52,9 @@ symlink_to_home .gitconfig
 symlink_to_home .sbtconfig
 symlink_to_home gitignore .gitignore
 
+test -d $HOME/.gradle || mkdir ~/.gradle
+symlink_to_home gradle.properties .gradle/
+
 log "initiating submodules"
 init_submodules .
 init_submodules $HOME/.janus
