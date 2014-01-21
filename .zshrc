@@ -142,3 +142,5 @@ source /usr/local/opt/zsh-history-substring-search/zsh-history-substring-search.
 zmodload zsh/terminfo
 bindkey "$terminfo[kcuu1]" history-substring-search-up
 bindkey "$terminfo[kcud1]" history-substring-search-down
+
+autoload -U zmv
