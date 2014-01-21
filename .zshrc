@@ -137,3 +137,8 @@ VIRTUAL_ENV_DISABLE_PROMPT=true
 # export WORKON_HOME=$HOME/.virtualenvs
 # source /usr/local/bin/virtualenvwrapper.sh
 # workon default
+
+source /usr/local/opt/zsh-history-substring-search/zsh-history-substring-search.zsh
+zmodload zsh/terminfo
+bindkey "$terminfo[kcuu1]" history-substring-search-up
+bindkey "$terminfo[kcud1]" history-substring-search-down
