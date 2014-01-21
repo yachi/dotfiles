@@ -66,6 +66,10 @@ find powerline-fonts|grep tf$|xargs -I {} cp -v "$(grealpath {})" $HOME/Library/
 log "installing crontab"
 crontab "$(pwd)/crontab"
 
+log "installing xcode solarized theme"
+mkdir -p ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
+cp -v xcode-themes/*.dvtcolortheme ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
+
 [ "$(zsh --version|cut -f2 -d ' ')" = "5.0.2" ] || (
   log "changing default shell"
   sudo chsh -s /usr/local/bin/zsh $USER
