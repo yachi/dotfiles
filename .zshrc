@@ -62,6 +62,7 @@ export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+ssh-add ~/.ssh/pems/*.pem
 
 # syntax highlight
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
