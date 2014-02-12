@@ -52,6 +52,7 @@ plugins=(
   brew
   rbenv
   bundler
+  rails
   extract
   safe-paste
   zeus
@@ -107,6 +108,14 @@ alias pie="perl -p -i -e "
 alias lc="python $HOME/github/dotfiles/pidcat/pidcat.py"
 alias tarxz='tar --use-compress-program=pxz'
 
+function gdb (){
+  # show branch diff
+  current_branch=`git branch --list|grep '*'|cut -f2 -d' '`
+  diff_branch=$1
+  base=$(git merge-base $current_branch $diff_branch)
+  git show --summary $base
+  git diff $base $3
+}
 function bung () { ag "$@" `bundle show --paths` }
 function pg(){
   if [[ -f gradlew ]]; then
