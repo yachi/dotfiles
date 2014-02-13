@@ -108,6 +108,7 @@ alias gfg="git ls-files|ag -i "
 alias pie="perl -p -i -e "
 alias lc="python $HOME/github/dotfiles/pidcat/pidcat.py"
 alias tarxz='tar --use-compress-program=pxz'
+alias vssh='sh -c "cd $(dirname $(git ls-files |grep Vagrantfile)) && vagrant ssh"'
 
 function gdb (){
   # show branch diff
