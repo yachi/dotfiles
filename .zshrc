@@ -64,6 +64,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 ssh-add ~/.ssh/pems/*.pem > /dev/null 2>&1
+ssh-add ~/.ssh/id_rsa > /dev/null 2>&1
 
 # syntax highlight
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
