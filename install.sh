@@ -5,11 +5,10 @@
 #   rbenv ruby ready
 #
 function init_submodules(){
-  cd $1
-  git submodule init
-  git submodule sync
-  git submodule update
-  cd -
+  sh -c "cd $1;
+    git submodule init;
+    git submodule sync;
+    git submodule update"
 }
 
 function symlink_to_home(){
