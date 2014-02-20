@@ -40,7 +40,7 @@ brew_packages=(
   zsh-history-substring-search
 )
 brew install "${brew_packages[@]}"
-[ -z $(pip show powerline) ] && pip install git+https://github.com/Lokaltog/powerline
+[ -z $(pip show powerline|head -n1) ] && pip install git+https://github.com/Lokaltog/powerline
 
 log "adding symlinks to $HOME"
 symlink_to_home .zshrc
