@@ -13,3 +13,6 @@
 [submodule "xcode-themes"]
 	path = xcode-themes
 	url = https://github.com/hdoria/xcode-themes.git
+[submodule "custom-plugins/fuck"]
+	path = custom-plugins/fuck
+	url = https://gist.github.com/9151052.git

@@ -71,6 +71,12 @@ log "installing xcode solarized theme"
 mkdir -p ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
 cp -v xcode-themes/*.dvtcolortheme ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
 
+if ! [[ ~/.oh-my-zsh/custom/plugins ]]; then
+  log "installing oh my zsh custom plugins"
+  mkdir -p ~/.oh-my-zsh/custom
+  ln -svf $(pwd)/custom-plugins ~/.oh-my-zsh/custom/plugins
+fi
+
 if [[ $SHELL != "/usr/local/bin/zsh" ]]; then
   log "changing default shell"
   sudo chsh -s /usr/local/bin/zsh $USER
