@@ -71,10 +71,10 @@ log "installing xcode solarized theme"
 mkdir -p ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
 cp -v xcode-themes/*.dvtcolortheme ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
 
-[ "$(zsh --version|cut -f2 -d ' ')" = "5.0.2" ] || (
+if [[ $SHELL != "/usr/local/bin/zsh" ]]; then
   log "changing default shell"
   sudo chsh -s /usr/local/bin/zsh $USER
-)
+fi
 
 echo
 echo "Done! Start a new shell to test!"
