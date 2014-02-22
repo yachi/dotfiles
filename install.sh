@@ -38,6 +38,7 @@ brew_packages=(
   spark
   terminal-notifier
   zsh-history-substring-search
+  reattach-to-user-namespace
 )
 brew install "${brew_packages[@]}"
 [ -z $(pip show powerline|head -n1) ] && pip install git+https://github.com/Lokaltog/powerline
