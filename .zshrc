@@ -143,6 +143,13 @@ function ad(){
 function adcat(){
   adb -d shell "run-as $1 cat /data/data/$1/databases/$2"
 }
+function adbpush(){
+  d=/sdcard/Download/
+  for f in $@; do
+    echo "pushing $f to $d..."
+    adb -d push $f $d
+  done
+}
 
 # tmpfix for tab autocompletion dircolor
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
