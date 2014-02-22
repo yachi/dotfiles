@@ -136,13 +136,6 @@ function v(){
     vim $@
   fi
 }
-function ad(){
-  adb -d shell "run-as $1 cat /data/data/$1/databases/$2 > /sdcard/database.sqlite"
-  adb pull /sdcard/database.sqlite ./$1.$2.sqlite
-}
-function adcat(){
-  adb -d shell "run-as $1 cat /data/data/$1/databases/$2"
-}
 function adbpush(){
   d=/sdcard/Download/
   for f in $@; do
