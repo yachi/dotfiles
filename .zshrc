@@ -63,7 +63,7 @@ export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-if [[ -d ~/.ssh/pems ]]
+if [[ -d ~/.ssh/pems ]]; then
   ssh-add ~/.ssh/pems/*.pem > /dev/null 2>&1
 fi
 ssh-add ~/.ssh/id_rsa > /dev/null 2>&1
