@@ -50,6 +50,7 @@ symlink_to_home .tmux.conf
 symlink_to_home .janus
 symlink_to_home .janus/.vimrc.after
 symlink_to_home .janus/.vimrc.before
+symlink_to_home .bundle
 symlink_to_home .gemrc
 symlink_to_home .gitconfig
 symlink_to_home .sbtconfig
