@@ -115,6 +115,11 @@ alias tarxz='tar --use-compress-program=pxz'
 alias vssh='sh -c "cd $(dirname $(git ls-files |grep Vagrantfile)) && vagrant ssh"'
 alias diff-highlight="/usr/local/share/git-core/contrib/diff-highlight/diff-highlight"
 
+# i like verbose
+alias rm="rm -v "
+alias ln="ln -v "
+alias cp="cp -v "
+
 function gdb (){
   # show branch diff
   current_branch=`git branch --list|grep '*'|cut -f2 -d' '`
