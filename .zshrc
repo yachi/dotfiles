@@ -53,6 +53,7 @@ plugins=(
   rbenv
   bundler
   rails
+  knife
   extract
   safe-paste
   zeus
