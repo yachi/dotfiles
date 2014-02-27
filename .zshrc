@@ -112,6 +112,7 @@ alias pie="perl -p -i -e "
 alias lc="python $HOME/github/dotfiles/pidcat/pidcat.py"
 alias tarxz='tar --use-compress-program=pxz'
 alias vssh='sh -c "cd $(dirname $(git ls-files |grep Vagrantfile)) && vagrant ssh"'
+alias diff-highlight="/usr/local/share/git-core/contrib/diff-highlight/diff-highlight"
 
 function gdb (){
   # show branch diff
@@ -133,7 +134,7 @@ function v(){
   if [[ -z $@ ]]; then
     vim .
   else
-    vim $@
+    vim -O $@
   fi
 }
 function adbpush(){
