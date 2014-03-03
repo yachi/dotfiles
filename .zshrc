@@ -47,7 +47,7 @@ ZSH_THEME="robbyrussell"
 plugins=(
   go
   git
-  git-flow
+  git-flow-avh
   gitignore
   brew
   rbenv
@@ -59,6 +59,7 @@ plugins=(
   zeus
   z
   fuck
+  nyan
 )
 
 export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin
