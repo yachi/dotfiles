@@ -16,3 +16,6 @@
 [submodule "custom-plugins/fuck"]
 	path = custom-plugins/fuck
 	url = https://gist.github.com/9151052.git
+[submodule "solarized"]
+	path = solarized
+	url = https://github.com/altercation/solarized.git
