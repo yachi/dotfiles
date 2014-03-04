@@ -109,6 +109,8 @@ PATH="$GOPATH/bin:$PATH"
 # alias
 alias ls="ls --color=auto"
 alias crontab="VIM_CRONTAB=true crontab"
+alias gf="git flow "
+alias gff="git flow feature "
 alias gfg="git ls-files|ag -i "
 alias pie="perl -p -i -e "
 alias lc="python $HOME/github/dotfiles/pidcat/pidcat.py"
