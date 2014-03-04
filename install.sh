@@ -40,6 +40,7 @@ brew_packages=(
   zsh-history-substring-search
   reattach-to-user-namespace
 )
+brew install git --with-pcre --without-completions
 brew install "${brew_packages[@]}"
 [ -z $(pip show powerline|head -n1) ] && pip install git+https://github.com/Lokaltog/powerline
 
