@@ -22,26 +22,17 @@ function log(){
   echo "==================================="
 }
 
+set -e
+
 test -d $HOME/.oh-my-zsh || (
   log "installing oh my zsh"
   curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
 )
 
 log "installing some packages"
-brew_packages=(
-  coreutils
-  zsh
-  zpython
-  python
-  tmux
-  grc
-  spark
-  terminal-notifier
-  zsh-history-substring-search
-  reattach-to-user-namespace
-)
-brew install git --with-pcre --without-completions
-brew install "${brew_packages[@]}"
+brew bundle
+
+log "installing powerline"
 [ -z $(pip show powerline|head -n1) ] && pip install git+https://github.com/Lokaltog/powerline
 
 log "adding symlinks to $HOME"
