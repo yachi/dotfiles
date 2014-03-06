@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# prerequisite:
-#   brew doctor: healthy
-#   rbenv ruby ready
-#
 function init_submodules(){
   sh -c "cd $1;
     git submodule init;
@@ -22,12 +18,15 @@ function log(){
   echo "==================================="
 }
 
-set -e
-
 test -d $HOME/.oh-my-zsh || (
   log "installing oh my zsh"
   curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
 )
+
+log "installing homebrew"
+ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+
+set -e
 
 log "installing some packages"
 brew bundle

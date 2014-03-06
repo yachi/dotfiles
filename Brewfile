@@ -1,5 +1,3 @@
-update
-
 tap phinze/cask
 install brew-cask
 
