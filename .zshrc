@@ -95,8 +95,8 @@ export MAKEFLAGS="-j5"
 PATH="~/bin:$PATH"
 
 # enable powerline for zsh
-# source /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
-source $HOME/github/dotfiles/zsh/powerline_shell.sh
+source /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
+#source $HOME/github/dotfiles/zsh/powerline_shell.sh
 
 
 # use solarized dircolors
