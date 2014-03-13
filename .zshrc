@@ -116,6 +116,8 @@ alias gf="git flow "
 alias gff="git flow feature "
 alias gffs="git flow feature start"
 alias gffp="git flow feature publish"
+alias gmd='git branch --merged=develop|grep "\bfeature/"'
+alias gmdd='git branch --merged=develop|grep "\bfeature/"|xargs git branch -d'
 alias gfg="git ls-files|ag -i "
 alias pie="perl -p -i -e "
 alias lc="python $HOME/github/dotfiles/pidcat/pidcat.py"
