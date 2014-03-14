@@ -11,6 +11,9 @@ ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="robbyrussell"
 
+# dotfiles path
+DOTFILES="$HOME/github/dotfiles"
+
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
@@ -96,11 +99,11 @@ PATH="~/bin:$PATH"
 
 # enable powerline for zsh
 source /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
-#source $HOME/github/dotfiles/zsh/powerline_shell.sh
+#source $DOTFILES/zsh/powerline_shell.sh
 
 
 # use solarized dircolors
-eval $(dircolors $HOME/github/dotfiles/dircolors-solarized/dircolors.ansi-universal)
+eval $(dircolors $DOTFILES/dircolors-solarized/dircolors.ansi-universal)
 
 # enable grc
 source /usr/local/etc/grc.bashrc
@@ -120,7 +123,7 @@ alias gmd='git branch --merged=develop|grep "\bfeature/"'
 alias gmdd='git branch --merged=develop|grep "\bfeature/"|xargs git branch -d'
 alias gfg="git ls-files|ag -i "
 alias pie="perl -p -i -e "
-alias lc="python $HOME/github/dotfiles/pidcat/pidcat.py"
+alias lc="python $DOTFILES/pidcat/pidcat.py"
 alias tarxz='tar --use-compress-program=pxz'
 alias vssh='sh -c "cd $(dirname $(git ls-files |grep Vagrantfile)) && vagrant ssh"'
 alias diff-highlight="/usr/local/share/git-core/contrib/diff-highlight/diff-highlight"
