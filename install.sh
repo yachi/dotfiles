@@ -38,6 +38,7 @@ log "adding symlinks to $HOME"
 symlink_to_home .zshrc
 symlink_to_home .curlrc
 symlink_to_home .tmux.conf
+symlink_to_home .xvimrc
 symlink_to_home .janus
 symlink_to_home .janus/.vimrc.after
 symlink_to_home .janus/.vimrc.before
