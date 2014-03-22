@@ -7,4 +7,4 @@ cask install slack
 cask install virtualbox
 
 install git --without-completions --with-pcre
-install postgresql
+# install postgresql
