@@ -48,22 +48,22 @@ DOTFILES="$HOME/github/dotfiles"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(
-  go
+  brew
+  bundler
+  extract
+  fuck
   git
   git-flow-avh
   gitignore
-  brew
-  rbenv
-  bundler
-  rails
+  go
   knife
-  extract
-  safe-paste
-  zeus
-  z
-  fuck
   nyan
+  rails
+  rbenv
+  safe-paste
   xcode
+  z
+  zeus
 )
 
 export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin
