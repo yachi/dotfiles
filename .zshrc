@@ -59,6 +59,7 @@ plugins=(
   knife
   nyan
   rails
+  rake-fast
   rbenv
   safe-paste
   xcode
