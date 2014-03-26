@@ -86,6 +86,8 @@ export LANG=en_US.UTF-8
 # use bins from coreutils
 PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
+PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
+MANPATH="/usr/local/opt/gnu-sed/libexec/gnuman:$MANPATH"
 
 # android paths
 export ANDROID_HOME="/Applications/Android Studio.app/sdk"
