@@ -56,12 +56,17 @@ plugins=(
   git-flow-avh
   gitignore
   go
+  grep
+  jsontools
   knife
   nyan
+  pip
   rails
   rake-fast
   rbenv
   safe-paste
+  spectrum
+  vagrant
   xcode
   z
   zeus
