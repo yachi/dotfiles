@@ -49,6 +49,7 @@ DOTFILES="$HOME/github/dotfiles"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(
   brew
+  brew-cask
   bundler
   extract
   fuck
