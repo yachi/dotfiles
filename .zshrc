@@ -48,6 +48,7 @@ DOTFILES="$HOME/github/dotfiles"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(
+  atom
   brew
   brew-cask
   bundler
