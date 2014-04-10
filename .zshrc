@@ -130,7 +130,7 @@ alias gff="git flow feature "
 alias gffs="git flow feature start"
 alias gffp="git flow feature publish"
 alias gffr="git flow feature rebase"
-alias gmd='git fetch --prune && git branch --merged=origin/develop|grep "\b/\b"'
+alias gmd='git checkout develop && git pull --rebase && git fetch --prune && echo "Merged branches:" && git branch --merged=origin/develop|grep "\b/\b"'
 alias gmdd='git branch --merged=origin/develop|grep "\b/\b"|xargs git branch -d'
 alias gfp='git fetch --prune'
 alias gfg="git ls-files|ag -i "
