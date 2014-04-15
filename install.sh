@@ -53,8 +53,7 @@ test -d $HOME/.gradle || mkdir ~/.gradle
 symlink_to_home gradle.properties .gradle/
 
 log "initiating submodules"
-init_submodules .
-init_submodules $HOME/.janus
+git submodule update --init --recursive
 
 log "installing powerline fonts"
 find powerline-fonts|grep tf$|xargs -I {} cp -v "$(grealpath {})" $HOME/Library/Fonts/

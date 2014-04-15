@@ -52,6 +52,7 @@ plugins=(
   brew
   brew-cask
   bundler
+  encode64
   extract
   fuck
   git
