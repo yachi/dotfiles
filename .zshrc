@@ -83,9 +83,6 @@ if [[ -d ~/.ssh/pems ]]; then
 fi
 ssh-add ~/.ssh/id_rsa > /dev/null 2>&1
 
-# syntax highlight
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
 # some env stuff
 export EDITOR=$(which vim)
 export LANG=en_US.UTF-8
@@ -201,7 +198,11 @@ VIRTUAL_ENV_DISABLE_PROMPT=true
 # source /usr/local/bin/virtualenvwrapper.sh
 # workon default
 
+# syntax highlight
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 source /usr/local/opt/zsh-history-substring-search/zsh-history-substring-search.zsh
+# bind UP and DOWN arrow keys
 zmodload zsh/terminfo
 bindkey "$terminfo[kcuu1]" history-substring-search-up
 bindkey "$terminfo[kcud1]" history-substring-search-down
