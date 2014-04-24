@@ -67,7 +67,6 @@ plugins=(
   rails
   rake-fast
   rbenv
-  safe-paste
   spectrum
   vagrant
   xcode
