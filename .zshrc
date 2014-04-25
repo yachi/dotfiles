@@ -63,6 +63,7 @@ plugins=(
   jsontools
   knife
   nyan
+  per-directory-history
   pip
   rails
   rake-fast
