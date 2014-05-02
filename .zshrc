@@ -63,6 +63,7 @@ plugins=(
   jsontools
   knife
   nyan
+  osx
   per-directory-history
   pip
   rails
