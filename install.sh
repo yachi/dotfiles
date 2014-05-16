@@ -35,7 +35,7 @@ log "installing powerline"
 [ -z $(pip show powerline|head -n1) ] && pip install git+https://github.com/Lokaltog/powerline
 
 log "adding symlinks to $HOME"
-symlink_to_home dotvim .vim
+test -d ~/.vim || symlink_to_home dotvim .vim
 symlink_to_home .vimrc
 symlink_to_home .zshrc
 symlink_to_home .tmux.conf
