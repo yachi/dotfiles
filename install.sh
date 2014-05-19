@@ -32,7 +32,7 @@ log "installing some packages"
 brew bundle
 
 log "installing powerline"
-[ -z $(pip show powerline|head -n1) ] && pip install git+https://github.com/Lokaltog/powerline
+pip install --upgrade git+https://github.com/Lokaltog/powerline
 
 log "adding symlinks to $HOME"
 test -d ~/.vim || symlink_to_home dotvim .vim
