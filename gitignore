@@ -17,5 +17,6 @@ Icon
 .Trashes
 
 # ctags
+stdlib.tags
 gems.tags
 tags
