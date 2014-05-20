@@ -11,7 +11,6 @@ source ~/.vim/vimrc
 
 " CSV {{
 NeoBundle 'chrisbra/csv.vim'
-NeoBundleCheck
 
 if exists("did_load_csvfiletype")
   finish
@@ -22,3 +21,10 @@ augroup filetypedetect
   au! BufRead,BufNewFile *.csv,*.dat  setfiletype csv
 augroup END
 " }}
+
+" Slim {{
+NeoBundleLazy 'slim-template/vim-slim', {'autoload':{'filetypes':['slim']}}
+" }}
+"
+
+NeoBundleCheck
