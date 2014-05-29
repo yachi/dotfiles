@@ -74,6 +74,7 @@ plugins=(
   xcode
   z
   zeus
+  catimg
 )
 
 export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin
@@ -187,7 +188,7 @@ function adbpush(){
   d=/sdcard/Download/
   for f in $@; do
     echo "pushing $f to $d..."
-    adb -d push $f $d
+    adb push $f $d
   done
 }
 
