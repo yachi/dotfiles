@@ -20,7 +20,7 @@ augroup END
 " }}
 
 " Slim {{
-NeoBundleLazy 'slim-template/vim-slim', {'autoload':{'filetypes':['slim']}}
+NeoBundle 'slim-template/vim-slim'
 " }}
 
 NeoBundleCheck
