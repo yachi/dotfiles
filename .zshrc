@@ -105,7 +105,7 @@ PATH="$ANDROID_HOME/platform-tools:$PATH"
 export MAKEFLAGS="-j5"
 
 # custom bins
-PATH="~/bin:$PATH"
+PATH="$HOME/bin:$PATH"
 
 # enable powerline for zsh
 source /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
