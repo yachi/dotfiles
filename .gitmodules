@@ -21,4 +21,4 @@
 	url = https://github.com/milkbikis/powerline-shell.git
 [submodule "dotvim"]
 	path = dotvim
-	url = https://github.com/bling/dotvim.git
+	url = https://github.com/yachi/dotvim.git
