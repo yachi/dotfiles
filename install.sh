@@ -26,10 +26,10 @@ test -d $HOME/.oh-my-zsh || (
 log "installing homebrew"
 ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 
-set -e
-
 log "installing some packages"
 brew bundle
+
+set -e
 
 log "installing powerline"
 pip install --upgrade git+https://github.com/Lokaltog/powerline
