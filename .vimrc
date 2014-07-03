@@ -4,6 +4,8 @@ let g:dotvim_settings.plugin_groups_exclude = []
 
 let g:airline_powerline_fonts = 1
 
+let g:ctrlp_user_command = 'cd %s && ((test -e ./.git && git ls-files -o --exclude-standard --cached) || find * -type f)'
+
 source ~/.vim/vimrc
 
 set tags+=gems.tags
