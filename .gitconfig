@@ -19,3 +19,5 @@
   lineNumber = true
 [alias]
   g = grep --break --heading --line-number
+[help]
+	autocorrect = -1

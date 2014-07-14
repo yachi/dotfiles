@@ -52,8 +52,10 @@ plugins=(
   brew
   brew-cask
   bundler
+  chruby
   encode64
   extract
+  frontend-search
   fuck
   git
   git-flow-avh
@@ -68,7 +70,6 @@ plugins=(
   pip
   rails
   rake-fast
-  rbenv
   spectrum
   vagrant
   xcode
@@ -144,22 +145,6 @@ alias diff-highlight="/usr/local/share/git-core/contrib/diff-highlight/diff-high
 alias rm="rm -v "
 alias ln="ln -v "
 alias cp="cp -v "
-
-functions ri(){
-  git clone https://github.com/sstephenson/rbenv.git ~/.rbenv 2>/dev/null
-  echo "$(pushd ~/.rbenv && git checkout -q master && git pull --rebase)"
-  brew reinstall ruby-install --HEAD
-  if [[ -n $1 ]]; then
-    version=$(ruby-install|grep $1|tail -n1|cut -f2 -d ":"|sed 's/ //g')
-    if ! [[ -d ~/.rbenv/versions/$version ]]; then
-      ((ruby-install ruby $1) &&
-      (ln -svf ~/.rubies/ruby-$version ~/.rbenv/versions/$version))
-    else
-      echo -n 'already installed latest version: '
-      echo $version
-    fi
-  fi
-}
 
 function gdb (){
   # show branch diff
