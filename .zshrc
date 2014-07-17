@@ -1,4 +1,5 @@
 module_path=($module_path /usr/local/lib/zpython)
+fpath=(~/.zsh/functions $fpath)
 fpath=(~/.zsh/functions/darwin $fpath)
 fpath=(/usr/local/share/zsh-completions $fpath)
 
