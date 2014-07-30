@@ -24,4 +24,4 @@
 	url = https://github.com/yachi/dotvim.git
 [submodule "hk"]
 	path = hk
-	url = https://github.com/heroku/hk
+	url = https://github.com/heroku/hk.git
