@@ -120,6 +120,9 @@ eval $(dircolors $DOTFILES/dircolors-solarized/dircolors.ansi-universal)
 # enable grc
 source /usr/local/etc/grc.bashrc
 
+# default ruby
+chruby ruby-2.1.2
+
 # go path
 export GOPATH=~/go
 PATH="$GOPATH/bin:$PATH"

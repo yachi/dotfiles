@@ -47,6 +47,7 @@ symlink_to_home .gitconfig
 symlink_to_home .sbtconfig
 symlink_to_home gitignore .gitignore
 
+test -d $HOME/.zsh/functions || mkdir -p $HOME/.zsh/functions
 cp -v $(pwd)/hk/contrib/hk-zsh-completion.sh ~/.zsh/functions/_hk
 
 test -d $HOME/.gradle || mkdir ~/.gradle
