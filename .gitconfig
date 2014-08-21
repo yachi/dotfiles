@@ -9,9 +9,9 @@
   excludesfile = ~/.gitignore
   autocrlf = input
 [pager]
-  log = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less
-  show = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less
-  diff = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less
+  log = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less -FRX
+  show = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less -FRX
+  diff = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less -FRX
 [diff]
   algorithm = histogram
 [grep]
