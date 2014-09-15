@@ -58,7 +58,6 @@ plugins=(
   encode64
   extract
   frontend-search
-  fuck
   git
   git-flow-avh
   gitignore
