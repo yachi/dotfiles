@@ -106,7 +106,7 @@ export MAKEFLAGS="-j5"
 PATH="$HOME/bin:$PATH"
 
 # antigen
-source antigen.zsh
+source $DOTFILES/antigen.zsh
 
 # custom
 for files in $DOTFILES/zshrc/*.zsh; do
