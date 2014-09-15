@@ -84,10 +84,6 @@ export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-if [[ -d ~/.ssh/pems ]]; then
-  ssh-add ~/.ssh/pems/*.pem > /dev/null 2>&1
-fi
-ssh-add ~/.ssh/id_rsa > /dev/null 2>&1
 
 # some env stuff
 export EDITOR=$(which vim)
@@ -110,104 +106,6 @@ export MAKEFLAGS="-j5"
 # custom bins
 PATH="$HOME/bin:$PATH"
 
-# enable powerline for zsh
-source /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
-#source $DOTFILES/zsh/powerline_shell.sh
-
-
-# use solarized dircolors
-eval $(dircolors $DOTFILES/dircolors-solarized/dircolors.ansi-universal)
-
-# enable grc
-source /usr/local/etc/grc.bashrc
-
-# default ruby
-chruby ruby-2.1.2
-
-# go path
-export GOPATH=~/go
-PATH="$GOPATH/bin:$PATH"
-
-# alias
-alias ls="ls --color=auto"
-alias crontab="VIM_CRONTAB=true crontab"
-alias gf="git flow "
-alias gff="git flow feature "
-alias gffs="git flow feature start"
-alias gffp="git flow feature publish"
-alias gffr="git flow feature rebase"
-alias gmd='git checkout develop && git pull --rebase && git fetch --prune && echo "Merged branches:" && git branch --merged=origin/develop|grep "\b/\b"'
-alias gmdd='git branch --merged=origin/develop|grep "\b/\b"|xargs -r git branch -d'
-alias gfp='git fetch --prune'
-alias gfg="git ls-files|ag -i "
-alias pie="perl -p -i -e "
-alias lc="python $DOTFILES/pidcat/pidcat.py"
-alias tarxz='tar --use-compress-program=pxz'
-alias vssh='sh -c "cd $(dirname $(git ls-files |grep Vagrantfile)) && vagrant ssh"'
-alias diff-highlight="/usr/local/share/git-core/contrib/diff-highlight/diff-highlight"
-
-# i like verbose
-alias rm="rm -v "
-alias ln="ln -v "
-alias cp="cp -v "
-
-function gdb (){
-  # show branch diff
-  current_branch=`git branch --list|grep '*'|cut -f2 -d' '`
-  diff_branch=$1
-  base=$(git merge-base $current_branch $diff_branch)
-  git show --summary $base
-  git diff $base $3
-}
-function bung () { ag "$@" `bundle show --paths` }
-function pg(){
-  if [[ -f gradlew ]]; then
-    ./gradlew --parallel $@
-  else
-    gradle --parallel $@
-  fi
-}
-function v(){
-  if [[ -z $@ ]]; then
-    vim .
-  else
-    vim -O $@
-  fi
-}
-function adbpush(){
-  d=/sdcard/Download/
-  for f in $@; do
-    echo "pushing $f to $d..."
-    adb push $f $d
-  done
-}
-function clean_up_brew_cask(){
-  cd /opt/homebrew-cask/Caskroom
-  for a in *; do cd $a; while [ $(ls |head -n1) != $(ls|tail -n1)  ]; do rm -rf $(ls|head -n1);done ;cd ..;done
-}
-function docker-enter() {
-  boot2docker ssh '[ -f /var/lib/boot2docker/nsenter  ] || docker run --rm -v /var/lib/boot2docker/:/target jpetazzo/nsenter'
-  boot2docker ssh sudo /var/lib/boot2docker/docker-enter "$@"
-}
-$(dvm env)
-
-# tmpfix for tab autocompletion dircolor
-zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
-
-# virtualenv
-VIRTUAL_ENV_DISABLE_PROMPT=true
-# export WORKON_HOME=$HOME/.virtualenvs
-# source /usr/local/bin/virtualenvwrapper.sh
-# workon default
-
-# syntax highlight
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/local/opt/zsh-history-substring-search/zsh-history-substring-search.zsh
-# bind UP and DOWN arrow keys
-zmodload zsh/terminfo
-bindkey "$terminfo[kcuu1]" history-substring-search-up
-bindkey "$terminfo[kcud1]" history-substring-search-down
-bindkey -M emacs '^P' history-substring-search-up
-bindkey -M emacs '^N' history-substring-search-down
-
-autoload -U zmv
+for files in $DOTFILES/zshrc/*.zsh; do
+  source $files
+done
