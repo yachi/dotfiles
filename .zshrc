@@ -54,6 +54,7 @@ plugins=(
   brew-cask
   bundler
   chruby
+  docker
   encode64
   extract
   frontend-search
@@ -180,6 +181,15 @@ function adbpush(){
     adb push $f $d
   done
 }
+function clean_up_brew_cask(){
+  cd /opt/homebrew-cask/Caskroom
+  for a in *; do cd $a; while [ $(ls |head -n1) != $(ls|tail -n1)  ]; do rm -rf $(ls|head -n1);done ;cd ..;done
+}
+function docker-enter() {
+  boot2docker ssh '[ -f /var/lib/boot2docker/nsenter  ] || docker run --rm -v /var/lib/boot2docker/:/target jpetazzo/nsenter'
+  boot2docker ssh sudo /var/lib/boot2docker/docker-enter "$@"
+}
+$(dvm env)
 
 # tmpfix for tab autocompletion dircolor
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
@@ -192,11 +202,12 @@ VIRTUAL_ENV_DISABLE_PROMPT=true
 
 # syntax highlight
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
 source /usr/local/opt/zsh-history-substring-search/zsh-history-substring-search.zsh
 # bind UP and DOWN arrow keys
 zmodload zsh/terminfo
 bindkey "$terminfo[kcuu1]" history-substring-search-up
 bindkey "$terminfo[kcud1]" history-substring-search-down
+bindkey -M emacs '^P' history-substring-search-up
+bindkey -M emacs '^N' history-substring-search-down
 
 autoload -U zmv
