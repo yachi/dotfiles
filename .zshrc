@@ -61,7 +61,6 @@ plugins=(
   git-flow-avh
   gitignore
   go
-  grep
   jsontools
   knife
   nyan
@@ -70,7 +69,6 @@ plugins=(
   pip
   rails
   rake-fast
-  spectrum
   vagrant
   xcode
   z
