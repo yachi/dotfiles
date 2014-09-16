@@ -31,6 +31,9 @@ brew bundle
 
 set -e
 
+log "installing powerline"
+pip install --upgrade git+https://github.com/Lokaltog/powerline
+
 log "adding symlinks to $HOME"
 test -e $HOME/.vim || symlink_to_home dotvim .vim
 symlink_to_home .vimrc
