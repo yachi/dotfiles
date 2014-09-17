@@ -17,6 +17,6 @@ alias vssh='sh -c "cd $(dirname $(git ls-files |grep Vagrantfile)) && vagrant ss
 alias diff-highlight="/usr/local/share/git-core/contrib/diff-highlight/diff-highlight"
 
 # i like verbose
-alias rm="rm -v "
+alias rm="safe-rm -v "
 alias ln="ln -v "
 alias cp="cp -v "
