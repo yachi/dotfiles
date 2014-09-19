@@ -37,3 +37,7 @@ function clean_up_brew_cask(){
   cd /opt/homebrew-cask/Caskroom
   for a in *; do cd $a; while [ $(ls |head -n1) != $(ls|tail -n1)  ]; do rm -rf $(ls|head -n1);done ;cd ..;done
 }
+
+function aw() {
+  awk "{print \$$1}"
+}
