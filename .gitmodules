@@ -13,9 +13,6 @@
 [submodule "solarized"]
 	path = solarized
 	url = https://github.com/altercation/solarized.git
-[submodule "powerline-shell"]
-	path = powerline-shell
-	url = https://github.com/milkbikis/powerline-shell.git
 [submodule "dotvim"]
 	path = dotvim
 	url = https://github.com/yachi/dotvim.git
