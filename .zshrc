@@ -110,3 +110,6 @@ source $DOTFILES/antigen.zsh
 for files in $DOTFILES/zshrc/*.zsh; do
   source $files
 done
+
+# docker at home
+export DOCKER_HOST=10.0.1.11:5555
