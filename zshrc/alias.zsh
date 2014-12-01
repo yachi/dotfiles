@@ -4,6 +4,7 @@ alias crontab="VIM_CRONTAB=true crontab"
 alias gf="git flow "
 alias gff="git flow feature "
 alias gffs="git flow feature start"
+alias gfff="git flow feature finish --no-ff"
 alias gffp="git flow feature publish"
 alias gffr="git flow feature rebase"
 alias gmd='git checkout develop && git pull --rebase && git fetch --prune && echo "Merged branches:" && git branch --merged=origin/develop|grep "\b/\b"'
