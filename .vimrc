@@ -19,3 +19,7 @@ set number
 
 set wildmode=longest,list,full
 set wildmenu
+
+let base16colorspace=256
+set background=dark
+colorscheme base16-3024
