@@ -41,3 +41,7 @@ function clean_up_brew_cask(){
 function aw() {
   awk "{print \$$1}"
 }
+
+function joinargs() {
+  (IFS="$1"; shift && echo "$*")
+}
