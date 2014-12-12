@@ -71,7 +71,6 @@ plugins=(
   rake-fast
   vagrant
   xcode
-  z
   zeus
   catimg
 )
