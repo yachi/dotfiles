@@ -23,3 +23,9 @@ set wildmenu
 let base16colorspace=256
 set background=dark
 colorscheme base16-3024
+
+" HARDCORE !!!
+noremap h <NOP>
+noremap j <NOP>
+noremap k <NOP>
+noremap l <NOP>
