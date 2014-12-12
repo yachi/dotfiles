@@ -103,13 +103,21 @@ export MAKEFLAGS="-j5"
 # custom bins
 PATH="$HOME/bin:$PATH"
 
-# antigen
-source $DOTFILES/antigen.zsh
+function _load_custom_scripts(){
+  # antigen
+  source $DOTFILES/antigen.zsh
 
-# custom
-for files in $DOTFILES/zshrc/*.zsh; do
-  source $files
-done
+  # custom
+  for files in $DOTFILES/zshrc/*.zsh; do
+    source $files
+  done
+}
+
+_load_custom_scripts
+
+function reload-shell() {
+  _load_custom_scripts
+}
 
 # docker at home
 export DOCKER_HOST=10.0.1.11:5555
