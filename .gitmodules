@@ -4,9 +4,6 @@
 [submodule "xcode-themes"]
 	path = xcode-themes
 	url = https://github.com/hdoria/xcode-themes.git
-[submodule "solarized"]
-	path = solarized
-	url = https://github.com/altercation/solarized.git
 [submodule "dotvim"]
 	path = dotvim
 	url = https://github.com/yachi/dotvim.git
