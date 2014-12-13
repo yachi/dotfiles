@@ -27,12 +27,17 @@ log "installing homebrew"
 ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 
 log "installing some packages"
+brew tap homebrew/boneyard
 brew bundle
 
 set -e
 
 log "installing powerline"
 pip install --upgrade git+https://github.com/Lokaltog/powerline
+
+log "install peru"
+pip3 install --upgrade peru
+peru sync
 
 log "adding symlinks to $HOME"
 test -e $HOME/.vim || symlink_to_home dotvim .vim

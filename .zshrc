@@ -103,9 +103,6 @@ export MAKEFLAGS="-j5"
 PATH="$HOME/bin:$PATH"
 
 function _load_custom_scripts(){
-  # antigen
-  source $DOTFILES/antigen.zsh
-
   # custom
   for files in $DOTFILES/zshrc/*.zsh; do
     source $files

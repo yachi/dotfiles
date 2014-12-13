@@ -1,0 +1,26 @@
+imports:
+  zsh-syntax-highlighting: peru/zsh-syntax-highlighting
+  zsh-history-substring-search: peru/zsh-history-substring-search
+  powerline: peru/powerline
+  git-plugin: peru/git-plugin
+
+git module zsh-syntax-highlighting:
+  url: https://github.com/zsh-users/zsh-syntax-highlighting.git
+  rev: 3dc574190071ef59054f6d693132410b37aa3ae4
+  files: '**/*.zsh'
+
+git module zsh-history-substring-search:
+  url: https://github.com/zsh-users/zsh-history-substring-search.git
+  rev: 9f9fc7d550cc547737f4c686591cbbf07e7470b0
+  files: zsh-history-substring-search.*
+
+git module powerline:
+  url: https://github.com/powerline/powerline.git
+  files: powerline/bindings/zsh/powerline.zsh
+  rev: 6eaa640577fbf83d76b50e4e4c0bd9179e908e62
+
+git module git-plugin:
+  url: https://github.com/ncanceill/oh-my-zsh.git
+  reup: plugin-git
+  files: plugins/git/git.plugin.zsh
+  rev: a090263438ff4cefd47778afe9d4c08e8792ea7b
