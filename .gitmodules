@@ -1,9 +1,6 @@
 [submodule "powerline-fonts"]
 	path = powerline-fonts
 	url = https://github.com/Lokaltog/powerline-fonts.git
-[submodule "xcode-themes"]
-	path = xcode-themes
-	url = https://github.com/hdoria/xcode-themes.git
 [submodule "dotvim"]
 	path = dotvim
 	url = https://github.com/yachi/dotvim.git
