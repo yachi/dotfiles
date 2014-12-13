@@ -3,6 +3,7 @@ imports:
   zsh-history-substring-search: peru/zsh-history-substring-search
   powerline: peru/powerline
   git-plugin: peru/git-plugin
+  pidcat: peru/pidcat
 
 git module zsh-syntax-highlighting:
   url: https://github.com/zsh-users/zsh-syntax-highlighting.git
@@ -24,3 +25,8 @@ git module git-plugin:
   reup: plugin-git
   files: plugins/git/git.plugin.zsh
   rev: a090263438ff4cefd47778afe9d4c08e8792ea7b
+
+git module pidcat:
+  url: https://github.com/JakeWharton/pidcat.git
+  files: pidcat.py
+  rev: 4c79363e5ad001692b1d4d8f61657859bd5185a6
