@@ -1,1 +1,1 @@
-source peru/git-plugin/plugins/git/git.plugin.zsh
+source $DOTFILES/peru/git-plugin/plugins/git/git.plugin.zsh
