@@ -1,4 +1,4 @@
-source $DOTFILES/peru/powerline-zsh/powerline.zsh
+source $DOTFILES/peru/powerline/zsh/powerline.zsh
 
 source $DOTFILES/peru/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $DOTFILES/peru/zsh-history-substring-search/zsh-history-substring-search.zsh

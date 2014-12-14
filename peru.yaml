@@ -1,8 +1,7 @@
 imports:
   zsh-syntax-highlighting: peru/zsh-syntax-highlighting
   zsh-history-substring-search: peru/zsh-history-substring-search
-  powerline-zsh: peru/powerline-zsh
-  powerline-tmux: peru/powerline-tmux
+  powerline: peru/powerline
   powerline-fonts: peru/powerline-fonts
   git-plugin: peru/git-plugin
   pidcat: peru/pidcat
@@ -19,16 +18,12 @@ git module zsh-history-substring-search:
   rev: 9f9fc7d550cc547737f4c686591cbbf07e7470b0
   files: zsh-history-substring-search.*
 
-git module powerline-zsh:
+git module powerline:
   url: https://github.com/powerline/powerline.git
-  files: powerline.zsh
-  export: powerline/bindings/zsh/
-  rev: 6eaa640577fbf83d76b50e4e4c0bd9179e908e62
-
-git module powerline-tmux:
-  url: https://github.com/powerline/powerline.git
-  files: powerline.conf
-  export: powerline/bindings/tmux/
+  files:
+    - zsh/powerline.zsh
+    - tmux/powerline.conf
+  export: powerline/bindings/
   rev: 6eaa640577fbf83d76b50e4e4c0bd9179e908e62
 
 git module powerline-fonts:
