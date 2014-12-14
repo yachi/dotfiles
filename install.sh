@@ -62,7 +62,7 @@ log "initiating submodules"
 git submodule update --init --recursive
 
 log "installing powerline fonts"
-find powerline-fonts|grep tf$|xargs -I {} cp -v "$(grealpath {})" $HOME/Library/Fonts/
+sh peru/powerline-fonts/install.sh
 
 log "installing crontab"
 crontab "$(pwd)/crontab"

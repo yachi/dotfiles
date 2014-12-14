@@ -3,6 +3,7 @@ imports:
   zsh-history-substring-search: peru/zsh-history-substring-search
   powerline-zsh: peru/powerline-zsh
   powerline-tmux: peru/powerline-tmux
+  powerline-fonts: peru/powerline-fonts
   git-plugin: peru/git-plugin
   pidcat: peru/pidcat
   hk: peru/hk
@@ -28,6 +29,10 @@ git module powerline-tmux:
   files: powerline.conf
   export: powerline/bindings/tmux/
   rev: 6eaa640577fbf83d76b50e4e4c0bd9179e908e62
+
+git module powerline-fonts:
+  url: https://github.com/powerline/fonts.git
+  rev: af69d5307b9eae899056d6b7bea85e3b8dc703df
 
 git module git-plugin:
   url: https://github.com/ncanceill/oh-my-zsh.git
