@@ -4,6 +4,7 @@ imports:
   powerline: peru/powerline
   git-plugin: peru/git-plugin
   pidcat: peru/pidcat
+  hk: peru/hk
 
 git module zsh-syntax-highlighting:
   url: https://github.com/zsh-users/zsh-syntax-highlighting.git
@@ -30,3 +31,8 @@ git module pidcat:
   url: https://github.com/JakeWharton/pidcat.git
   files: pidcat.py
   rev: 4c79363e5ad001692b1d4d8f61657859bd5185a6
+
+git module hk:
+  url: https://github.com/heroku/hk.git
+  files: contrib/hk-zsh-completion.sh
+  rev: 7b200a4a98ae54507e98eada883f3382c2f9f689
