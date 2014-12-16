@@ -19,7 +19,7 @@ function pg(){
 
 function v(){
   if [[ -z $@ ]]; then
-    vim .
+    vim
   else
     vim -O $@
   fi
