@@ -7,6 +7,7 @@ imports:
   pidcat: peru/pidcat
   hk: peru/hk
   base16-shell: peru/base16-shell
+  dotvim: peru/dotvim
 
 git module zsh-syntax-highlighting:
   url: https://github.com/zsh-users/zsh-syntax-highlighting.git
@@ -50,3 +51,7 @@ git module base16-shell:
   url: https://github.com/chriskempson/base16-shell.git
   files: base16-default.dark.sh
   rev: c33aade439719ed7448fb1948ff8888e9b143f86
+
+git module dotvim:
+  url: https://github.com/yachi/dotvim.git
+  rev: 175cd296c8eac1560930c9be3fc644a694169d5e
