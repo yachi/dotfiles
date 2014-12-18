@@ -102,9 +102,13 @@ export MAKEFLAGS="-j5"
 # custom bins
 PATH="$HOME/bin:$PATH"
 
+setopt extendedglob
+
 function _load_custom_scripts(){
-  # custom
-  for files in $DOTFILES/zshrc/*.zsh; do
+  for files in $DOTFILES/zshrc/^_*.zsh; do
+    source $files
+  done
+  for files in $DOTFILES/zshrc/_*.zsh; do
     source $files
   done
 }
