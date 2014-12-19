@@ -11,8 +11,8 @@ alias gmd='git checkout develop && git pull --rebase && git fetch --prune && ech
 alias gmdd='git branch --merged=origin/develop|grep "\b/\b"|xargs -r git branch -d'
 alias gfp='git fetch --prune'
 alias gfg="git ls-files|ag -i "
-alias gpp="git push origin develop:develop && git push origin master:master && git push --tags"
-alias gupp="for a in {master,develop}; do git checkout \$a && git pull --ff --ff-only; done"
+alias gfpp="git push origin develop:develop && git push origin master:master && git push --tags"
+alias gfup="for a in {master,develop}; do git checkout \$a && git pull --ff --ff-only; done"
 alias gltH="git log --oneline \$(git tag|tail -n1)..HEAD"
 alias pie="perl -p -i -e "
 alias lc="python $DOTFILES/peru/pidcat/pidcat.py"
