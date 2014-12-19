@@ -29,7 +29,7 @@ git module powerline:
 
 git module powerline-fonts:
   url: https://github.com/powerline/fonts.git
-  rev: af69d5307b9eae899056d6b7bea85e3b8dc703df
+  rev: 8aab61d375f15a86f0a51d326f2417df9c4a0e52
 
 git module git-plugin:
   url: https://github.com/ncanceill/oh-my-zsh.git
@@ -50,8 +50,8 @@ git module hk:
 git module base16-shell:
   url: https://github.com/chriskempson/base16-shell.git
   files: base16-default.dark.sh
-  rev: c33aade439719ed7448fb1948ff8888e9b143f86
+  rev: 02a1a7887a7ab15e930b342a1e9de3f65c3f48e6
 
 git module dotvim:
   url: https://github.com/yachi/dotvim.git
-  rev: 175cd296c8eac1560930c9be3fc644a694169d5e
+  rev: dab5e3383454f70d9f4b2feb005ee20419c8d0b3
