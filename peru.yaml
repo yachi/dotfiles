@@ -54,4 +54,4 @@ git module base16-shell:
 
 git module dotvim:
   url: https://github.com/yachi/dotvim.git
-  rev: dab5e3383454f70d9f4b2feb005ee20419c8d0b3
+  rev: 3381d3686c359228cae71816907e0655afee5839
