@@ -29,9 +29,7 @@ set background=dark
 colorscheme base16-3024
 
 " HARDCORE !!!
-" noremap h <NOP>
-noremap j <NOP>
-noremap k <NOP>
-" noremap l <NOP>
-map jj gj
-map kk gk
+" noremap j <NOP>
+" noremap k <NOP>
+" map jj gj
+" map kk gk
