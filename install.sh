@@ -49,6 +49,7 @@ symlink_to_home .bundle
 symlink_to_home .gemrc
 symlink_to_home .rspec
 symlink_to_home .gitconfig
+symlink_to_home .git-templates
 symlink_to_home .sbtconfig
 symlink_to_home gitignore .gitignore
 

@@ -25,3 +25,5 @@
 ; 	insteadOf = git@github.com:
 [tag]
 	sort = version:refname
+[init]
+	templatedir = ~/.git-templates
