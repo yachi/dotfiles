@@ -15,7 +15,7 @@ alias gfpp="git push origin develop:develop && git push origin master:master && 
 alias gfup="for a in {master,develop}; do git checkout \$a && git pull --ff --ff-only; done"
 alias gltH="git log --oneline \$(git tag|tail -n1)..HEAD"
 alias pie="perl -p -i -e "
-alias lc="python $DOTFILES/peru/pidcat/pidcat.py"
+alias lc="python \$DOTFILES/peru/pidcat/pidcat.py"
 alias tarxz='tar --use-compress-program=pxz'
 alias vssh='sh -c "cd $(dirname $(git ls-files |grep Vagrantfile)) && vagrant ssh"'
 alias diff-highlight="/usr/local/share/git-core/contrib/diff-highlight/diff-highlight"

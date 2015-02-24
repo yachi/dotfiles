@@ -1,7 +1,7 @@
 module_path=($module_path /usr/local/lib/zpython)
-fpath=(~/.zsh/functions $fpath)
-fpath=(~/.zsh/functions/darwin $fpath)
-fpath=(/usr/local/share/zsh-completions $fpath)
+fpath=(~/.zsh/functions "${fpath[@]}")
+fpath=(~/.zsh/functions/darwin "${fpath[@]}")
+fpath=(/usr/local/share/zsh-completions "${fpath[@]}")
 
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
@@ -75,7 +75,7 @@ plugins=(
 )
 
 export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin
-source $ZSH/oh-my-zsh.sh
+source "$ZSH/oh-my-zsh.sh"
 
 # Customize to your needs...
 
@@ -105,10 +105,10 @@ setopt extendedglob
 
 function _load_custom_scripts(){
   for files in $DOTFILES/zshrc/^_*.zsh; do
-    source $files
+    source "$files"
   done
   for files in $DOTFILES/zshrc/_*.zsh; do
-    source $files
+    source "$files"
   done
 }
 
