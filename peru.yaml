@@ -16,7 +16,7 @@ git module zsh-syntax-highlighting:
 
 git module zsh-history-substring-search:
   url: https://github.com/zsh-users/zsh-history-substring-search.git
-  rev: 9f9fc7d550cc547737f4c686591cbbf07e7470b0
+  rev: 3c7b079275bff75941f531ac8fa09a6a8057405c
   files: zsh-history-substring-search.*
 
 git module powerline:
@@ -25,11 +25,11 @@ git module powerline:
     - zsh/powerline.zsh
     - tmux/powerline.conf
   export: powerline/bindings/
-  rev: 6eaa640577fbf83d76b50e4e4c0bd9179e908e62
+  rev: 8164f42fb924f38dc5b9dd6d32063e8c3d41e504
 
 git module powerline-fonts:
   url: https://github.com/powerline/fonts.git
-  rev: 8aab61d375f15a86f0a51d326f2417df9c4a0e52
+  rev: 39c99c02652f25290b64e24a7e9a7cfb8ce89a3e
 
 git module git-plugin:
   url: https://github.com/ncanceill/oh-my-zsh.git
@@ -40,12 +40,12 @@ git module git-plugin:
 git module pidcat:
   url: https://github.com/JakeWharton/pidcat.git
   files: pidcat.py
-  rev: 4c79363e5ad001692b1d4d8f61657859bd5185a6
+  rev: d23340de0511a051c384e5d6b6d667346daca2b0
 
 git module hk:
   url: https://github.com/heroku/hk.git
   files: contrib/hk-zsh-completion.sh
-  rev: 7b200a4a98ae54507e98eada883f3382c2f9f689
+  rev: 6d62fd68b5c472d56f4dedc854e80d81487dc495
 
 git module base16-shell:
   url: https://github.com/chriskempson/base16-shell.git
@@ -54,4 +54,4 @@ git module base16-shell:
 
 git module dotvim:
   url: https://github.com/yachi/dotvim.git
-  rev: 3381d3686c359228cae71816907e0655afee5839
+  rev: db0980a0960ef9ad58e85569a8401639b95d2a64
