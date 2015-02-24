@@ -8,7 +8,7 @@ function init_submodules(){
 }
 
 function symlink_to_home(){
-  ln -svf "$(pwd)/$1" $HOME/$2
+  ln -svf "$(pwd)/$1" "$HOME/$2"
 }
 
 function log(){
@@ -18,7 +18,7 @@ function log(){
   echo "==================================="
 }
 
-test -d $HOME/.oh-my-zsh || (
+test -d "$HOME/.oh-my-zsh" || (
   log "installing oh my zsh"
   curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
 )
@@ -40,7 +40,7 @@ pip3 install --upgrade peru
 peru sync
 
 log "adding symlinks to $HOME"
-test -e $HOME/.vim || symlink_to_home peru/dotvim .vim
+test -e "$HOME/.vim" || symlink_to_home peru/dotvim .vim
 symlink_to_home .vimrc
 symlink_to_home .zshrc
 symlink_to_home .tmux.conf
@@ -53,10 +53,10 @@ symlink_to_home .git-templates
 symlink_to_home .sbtconfig
 symlink_to_home gitignore .gitignore
 
-test -d $HOME/.zsh/functions || mkdir -p $HOME/.zsh/functions
+test -d "$HOME/.zsh/functions" || mkdir -p "$HOME/.zsh/functions"
 cp -v peru/hk/contrib/hk-zsh-completion.sh ~/.zsh/functions/_hk
 
-test -d $HOME/.gradle || mkdir ~/.gradle
+test -d "$HOME/.gradle" || mkdir ~/.gradle
 symlink_to_home gradle.properties .gradle/
 
 log "initiating submodules"
@@ -70,7 +70,7 @@ crontab "$(pwd)/crontab"
 
 if [[ $SHELL != "/usr/local/bin/zsh" ]]; then
   log "changing default shell"
-  sudo chsh -s /usr/local/bin/zsh $USER
+  sudo chsh -s /usr/local/bin/zsh "$USER"
 fi
 
 echo
