@@ -27,3 +27,5 @@
 	sort = version:refname
 [init]
 	templatedir = ~/.git-templates
+[git-up "bundler"]
+	check = true

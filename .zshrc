@@ -1,3 +1,6 @@
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
 module_path=($module_path /usr/local/lib/zpython)
 fpath=(~/.zsh/functions "${fpath[@]}")
 fpath=(~/.zsh/functions/darwin "${fpath[@]}")
@@ -81,7 +84,6 @@ source "$ZSH/oh-my-zsh.sh"
 
 # some env stuff
 export EDITOR=$(which vim)
-export LANG=en_US.UTF-8
 
 # use bins from coreutils
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
@@ -119,4 +121,4 @@ function reload-shell() {
 }
 
 # docker at home
-export DOCKER_HOST=10.0.1.11:5555
+export DOCKER_HOST=localhost:5555

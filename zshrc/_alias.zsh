@@ -20,6 +20,7 @@ alias tarxz='tar --use-compress-program=pxz'
 alias vssh='sh -c "cd $(dirname $(git ls-files |grep Vagrantfile)) && vagrant ssh"'
 alias diff-highlight="/usr/local/share/git-core/contrib/diff-highlight/diff-highlight"
 alias upgrade_vim_bundles="vim +NeoBundleUpdate"
+alias vv="/usr/local/bin/v"
 
 # i like verbose
 alias rm="safe-rm -v "

@@ -8,23 +8,24 @@ imports:
   hk: peru/hk
   base16-shell: peru/base16-shell
   dotvim: peru/dotvim
+  zsh-dwim: peru/zsh-dwim
 
 git module zsh-syntax-highlighting:
   url: https://github.com/zsh-users/zsh-syntax-highlighting.git
   rev: 3dc574190071ef59054f6d693132410b37aa3ae4
-  files: '**/*.zsh'
+  pick: '**/*.zsh'
 
 git module zsh-history-substring-search:
   url: https://github.com/zsh-users/zsh-history-substring-search.git
   rev: 3c7b079275bff75941f531ac8fa09a6a8057405c
-  files: zsh-history-substring-search.*
+  pick: zsh-history-substring-search.*
 
 git module powerline:
   url: https://github.com/powerline/powerline.git
-  files:
-    - zsh/powerline.zsh
-    - tmux/powerline.conf
   export: powerline/bindings/
+  pick:
+    - powerline/bindings/zsh/powerline.zsh
+    - powerline/bindings/tmux/powerline.conf
   rev: 8164f42fb924f38dc5b9dd6d32063e8c3d41e504
 
 git module powerline-fonts:
@@ -34,24 +35,32 @@ git module powerline-fonts:
 git module git-plugin:
   url: https://github.com/ncanceill/oh-my-zsh.git
   reup: plugin-git
-  files: plugins/git/git.plugin.zsh
+  pick: plugins/git/git.plugin.zsh
   rev: a090263438ff4cefd47778afe9d4c08e8792ea7b
 
 git module pidcat:
   url: https://github.com/JakeWharton/pidcat.git
-  files: pidcat.py
+  pick: pidcat.py
   rev: d23340de0511a051c384e5d6b6d667346daca2b0
 
 git module hk:
   url: https://github.com/heroku/hk.git
-  files: contrib/hk-zsh-completion.sh
-  rev: 6d62fd68b5c472d56f4dedc854e80d81487dc495
+  pick: contrib/hk-zsh-completion.sh
+  rev: b8aeaa3ab34c54e7e74b0082aaf4da8008fbdded
 
 git module base16-shell:
   url: https://github.com/chriskempson/base16-shell.git
-  files: base16-default.dark.sh
-  rev: 02a1a7887a7ab15e930b342a1e9de3f65c3f48e6
+  pick: base16-default.dark.sh
+  rev: 5acf5629a8bd186399a378c37c10507675525514
 
 git module dotvim:
   url: https://github.com/yachi/dotvim.git
-  rev: db0980a0960ef9ad58e85569a8401639b95d2a64
+  rev: 410f98b57e961356fd95569108e5bc66c9b7c53e
+
+git module zsh-dwim:
+  url: https://github.com/oknowton/zsh-dwim
+  pick:
+    - config.zsh
+    - init.zsh
+    - 'transform.d/*'
+  rev: 9485411bc274b44dfae2c16989ea6f514b595e8f
