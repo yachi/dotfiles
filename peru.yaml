@@ -41,7 +41,7 @@ git module git-plugin:
 git module pidcat:
   url: https://github.com/JakeWharton/pidcat.git
   pick: pidcat.py
-  rev: d23340de0511a051c384e5d6b6d667346daca2b0
+  rev: b050e6a491b2d288c1e42c9e184068ecb60d336d
 
 git module hk:
   url: https://github.com/heroku/hk.git
