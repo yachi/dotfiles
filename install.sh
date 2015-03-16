@@ -24,7 +24,7 @@ test -d "$HOME/.oh-my-zsh" || (
 )
 
 log "installing homebrew"
-ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 log "installing some packages"
 brew tap homebrew/boneyard

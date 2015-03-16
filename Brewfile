@@ -14,4 +14,8 @@ install safe-rm
 install git --without-completions --with-pcre
 install chruby
 install z --HEAD
+install mercurial
+install tig
+install grc
+install parallel
 # install postgresql

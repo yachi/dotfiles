@@ -16,7 +16,7 @@ ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="robbyrussell"
 
 # dotfiles path
-DOTFILES="$HOME/github/dotfiles"
+DOTFILES="$HOME/.dotfiles"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
