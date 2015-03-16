@@ -33,7 +33,8 @@ brew bundle
 set -e
 
 log "installing powerline"
-pip install --upgrade git+https://github.com/Lokaltog/powerline
+pip install --upgrade powerline-gitstatus
+pip install --upgrade powerline-status
 
 log "install peru"
 pip3 install --upgrade peru
