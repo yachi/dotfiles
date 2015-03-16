@@ -9,15 +9,16 @@ cask install virtualbox
 install python
 install python3
 install coreutils
-install findutils --default-names
 install safe-rm
-install git --without-completions --with-pcre
 install chruby
 install mercurial
 install tig
 install grc
 install parallel
-install libiconv
 install postgresql
 install zpython
+install git-flow-avh
+
+install git --without-completions --with-pcre
+install findutils --default-names
 install z --HEAD
