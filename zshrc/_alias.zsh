@@ -22,6 +22,7 @@ alias diff-highlight="/usr/local/share/git-core/contrib/diff-highlight/diff-high
 alias upgrade_vim_bundles="vim +NeoBundleUpdate"
 alias vv="/usr/local/bin/v"
 alias htop="sudo htop"
+alias howdoi="docker run --rm yachi/howdoi howdoi test string empty bash"
 
 # i like verbose
 alias rm="safe-rm -v "
