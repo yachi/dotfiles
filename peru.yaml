@@ -8,7 +8,7 @@ imports:
   hk: peru/hk
   base16-shell: peru/base16-shell
   dotvim: peru/dotvim
-  zsh-dwim: peru/zsh-dwim
+  k: peru/k
 
 git module zsh-syntax-highlighting:
   url: https://github.com/zsh-users/zsh-syntax-highlighting.git
@@ -17,7 +17,7 @@ git module zsh-syntax-highlighting:
 
 git module zsh-history-substring-search:
   url: https://github.com/zsh-users/zsh-history-substring-search.git
-  rev: 3c7b079275bff75941f531ac8fa09a6a8057405c
+  rev: d0381d859c0eb8d52a6211281e622e89153ef812
   pick: zsh-history-substring-search.*
 
 git module powerline:
@@ -41,7 +41,7 @@ git module git-plugin:
 git module pidcat:
   url: https://github.com/JakeWharton/pidcat.git
   pick: pidcat.py
-  rev: b050e6a491b2d288c1e42c9e184068ecb60d336d
+  rev: 660a8197f55cd7bc53f53a2b34014ac6df1c0ceb
 
 git module hk:
   url: https://github.com/heroku/hk.git
@@ -57,10 +57,6 @@ git module dotvim:
   url: https://github.com/yachi/dotvim.git
   rev: 410f98b57e961356fd95569108e5bc66c9b7c53e
 
-git module zsh-dwim:
-  url: https://github.com/oknowton/zsh-dwim
-  pick:
-    - config.zsh
-    - init.zsh
-    - 'transform.d/*'
-  rev: 9485411bc274b44dfae2c16989ea6f514b595e8f
+git module k:
+  url: https://github.com/supercrabtree/k.git
+  rev: 8c008381ddc9e0741627851a7780fe1592f7fda1
