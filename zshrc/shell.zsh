@@ -1,4 +1,5 @@
 source $DOTFILES/peru/powerline/zsh/powerline.zsh
+export PROMPT="$PROMPT$(sh -c 'date +%I\ 60*%M+45-30/24%%2+2~C*+C8335+0PP|dc|iconv -f ucs-4')  "
 
 source $DOTFILES/peru/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $DOTFILES/peru/zsh-history-substring-search/zsh-history-substring-search.zsh
