@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<root>
+  <item>
+    <name>HHKB CMD+Esc to CMD+Backquote</name>
+    <identifier>private.hhkb_cmd_esc_to_cmd_backquote</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::ESCAPE, ModifierFlag::COMMAND_L,
+      KeyCode::BACKQUOTE, ModifierFlag::COMMAND_L
+    </autogen>
+  </item>
+  <item>
+    <name>HHKB Caps Lock (Left Control) + K = Up</name>
+    <appendix>Vim Style</appendix>
+    <identifier>private.vim_up</identifier>
+    <autogen>
+      --KeyOverlaidModifier--
+      KeyCode::K,
+      ModifierFlag::CONTROL_L,
+      KeyCode::CURSOR_UP
+    </autogen>
+  </item>
+  <item>
+    <name>HHKB Caps Lock (Left Control) + J = Down</name>
+    <appendix>Vim Style</appendix>
+    <identifier>private.vim_down</identifier>
+    <autogen>
+      --KeyOverlaidModifier--
+      KeyCode::J,
+      ModifierFlag::CONTROL_L,
+      KeyCode::CURSOR_DOWN
+    </autogen>
+  </item>
+  <item>
+    <name>HHKB Caps Lock (Left Control) + H = Left</name>
+    <appendix>Vim Style</appendix>
+    <identifier>private.vim_left</identifier>
+    <autogen>
+      --KeyOverlaidModifier--
+      KeyCode::H,
+      ModifierFlag::CONTROL_L,
+      KeyCode::CURSOR_LEFT
+    </autogen>
+  </item>
+  <item>
+    <name>HHKB Caps Lock (Left Control) + L = Right</name>
+    <appendix>Vim Style</appendix>
+    <identifier>private.vim_right</identifier>
+    <autogen>
+      --KeyOverlaidModifier--
+      KeyCode::L,
+      ModifierFlag::CONTROL_L,
+      KeyCode::CURSOR_RIGHT
+    </autogen>
+  </item>
+</root>

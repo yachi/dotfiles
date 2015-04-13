@@ -53,6 +53,7 @@ symlink_to_home .gitconfig
 symlink_to_home .git-templates
 symlink_to_home .sbtconfig
 symlink_to_home gitignore .gitignore
+symlink_to_home karabiner.xml Library/Application\ Support/Karabiner/private.xml
 
 test -d "$HOME/.zsh/functions" || mkdir -p "$HOME/.zsh/functions"
 cp -v peru/hk/contrib/hk-zsh-completion.sh ~/.zsh/functions/_hk
