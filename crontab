@@ -1,1 +1,2 @@
 5 * * * * zsh ~/.dotfiles/scripts/check_homebrew_updates.zsh > /dev/null 2>&1
+5 * * * * sh -c 'cd ~/eventxtra/evx-sentry && heroku run sentry --config=sentry.conf.py cleanup --days 7' > /dev/null 2>&1
