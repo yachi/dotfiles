@@ -17,7 +17,7 @@ git module zsh-syntax-highlighting:
 
 git module zsh-history-substring-search:
   url: https://github.com/zsh-users/zsh-history-substring-search.git
-  rev: d0381d859c0eb8d52a6211281e622e89153ef812
+  rev: 6d7bc718aee81b9afa9e146b5567be014b3ff8f0
   pick: zsh-history-substring-search.*
 
 git module powerline:
@@ -30,13 +30,13 @@ git module powerline:
 
 git module powerline-fonts:
   url: https://github.com/powerline/fonts.git
-  rev: 39c99c02652f25290b64e24a7e9a7cfb8ce89a3e
+  rev: c4262ba2d4b5ec25c25607e5a802b10f42fca3b4
 
 git module git-plugin:
   url: https://github.com/ncanceill/oh-my-zsh.git
   reup: plugin-git
   pick: plugins/git/git.plugin.zsh
-  rev: a090263438ff4cefd47778afe9d4c08e8792ea7b
+  rev: 08c4d059ec13a0dd961c5a9071ef13ff00ca7d4c
 
 git module pidcat:
   url: https://github.com/JakeWharton/pidcat.git
@@ -55,7 +55,7 @@ git module base16-shell:
 
 git module dotvim:
   url: https://github.com/yachi/dotvim.git
-  rev: 410f98b57e961356fd95569108e5bc66c9b7c53e
+  rev: 00d42faa816d3ccd980e9036dc0da61fcf7973d1
 
 git module k:
   url: https://github.com/supercrabtree/k.git
