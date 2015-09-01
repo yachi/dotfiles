@@ -4,7 +4,7 @@ export RUBY_GC_MALLOC_LIMIT=16000100
 export RUBY_GC_OLDMALLOC_LIMIT_MAX=16000100
 
 # default ruby
-default_ruby="2.2.2"
+default_ruby="2.2.3"
 chruby "ruby-$default_ruby"
 
 install-ruby() {
