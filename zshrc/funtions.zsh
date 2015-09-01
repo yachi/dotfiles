@@ -31,7 +31,7 @@ function adbpush(){
   d=/sdcard/Download/
   for f in "$@"; do
     echo "pushing $f to $d..."
-    adb push "$f" $d
+    adb -d push "$f" $d
   done
 }
 
