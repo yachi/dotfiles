@@ -61,6 +61,7 @@ plugins=(
   encode64
   extract
   frontend-search
+  git
   git-flow-avh
   gitignore
   go

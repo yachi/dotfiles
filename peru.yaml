@@ -3,7 +3,6 @@ imports:
   zsh-history-substring-search: peru/zsh-history-substring-search
   powerline: peru/powerline
   powerline-fonts: peru/powerline-fonts
-  git-plugin: peru/git-plugin
   pidcat: peru/pidcat
   hk: peru/hk
   base16-shell: peru/base16-shell
@@ -12,12 +11,12 @@ imports:
 
 git module zsh-syntax-highlighting:
   url: https://github.com/zsh-users/zsh-syntax-highlighting.git
-  rev: 3dc574190071ef59054f6d693132410b37aa3ae4
+  rev: 4f3910cbbaa5b77d2abda65cd19b25b86554e552
   pick: '**/*.zsh'
 
 git module zsh-history-substring-search:
   url: https://github.com/zsh-users/zsh-history-substring-search.git
-  rev: c4a83561a12b898ff7145856d0e6ae50757e28ba
+  rev: 2c295432175990c1bb4e90bc13f609daa67a25d6
   pick: zsh-history-substring-search.*
 
 git module powerline:
@@ -26,22 +25,16 @@ git module powerline:
   pick:
     - powerline/bindings/zsh/powerline.zsh
     - powerline/bindings/tmux/powerline.conf
-  rev: 4d1b8e43ad824d48cf9731eaa6a8bf28f4fb2471
+  rev: 7ed55bb25c8d9ab3f96d63e83d11772c2fd07c9e
 
 git module powerline-fonts:
   url: https://github.com/powerline/fonts.git
-  rev: c4262ba2d4b5ec25c25607e5a802b10f42fca3b4
-
-git module git-plugin:
-  url: https://github.com/ncanceill/oh-my-zsh.git
-  reup: plugin-git
-  pick: plugins/git/git.plugin.zsh
-  rev: 5b75cc7880de1931a0507800d90eb77ed659fa46
+  rev: 6ac4c010afe4fc828f11aacac5e6b59289a8a4f6
 
 git module pidcat:
   url: https://github.com/JakeWharton/pidcat.git
   pick: pidcat.py
-  rev: b56aaac8cfa86ed8dbc1dfbf03064c87e4075308
+  rev: a6815e906a066b7b6e3ef93b989da52790174640
 
 git module hk:
   url: https://github.com/heroku/hk.git
@@ -59,4 +52,4 @@ git module dotvim:
 
 git module k:
   url: https://github.com/supercrabtree/k.git
-  rev: 5f386f0cd575303d1be6f9898c1a4a8ed03767b5
+  rev: 2fd558e2cfe0eab51b3238358d24d16e10693fa6

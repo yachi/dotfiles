@@ -1,1 +1,1 @@
-source $DOTFILES/peru/git-plugin/plugins/git/git.plugin.zsh
+alias gdc="git diff --cached"
