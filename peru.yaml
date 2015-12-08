@@ -12,7 +12,10 @@ imports:
 git module zsh-syntax-highlighting:
   url: https://github.com/zsh-users/zsh-syntax-highlighting.git
   rev: 4f3910cbbaa5b77d2abda65cd19b25b86554e552
-  pick: '**/*.zsh'
+  pick:
+    - '**/*.zsh'
+    - '.version'
+    - '.revision-hash'
 
 git module zsh-history-substring-search:
   url: https://github.com/zsh-users/zsh-history-substring-search.git
