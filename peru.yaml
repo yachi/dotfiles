@@ -11,7 +11,7 @@ imports:
 
 git module zsh-syntax-highlighting:
   url: https://github.com/zsh-users/zsh-syntax-highlighting.git
-  rev: 4f3910cbbaa5b77d2abda65cd19b25b86554e552
+  rev: 28932316cca6004253ec57f5d87981c72be64e86
   pick:
     - '**/*.zsh'
     - '.version'
@@ -19,7 +19,7 @@ git module zsh-syntax-highlighting:
 
 git module zsh-history-substring-search:
   url: https://github.com/zsh-users/zsh-history-substring-search.git
-  rev: 2c295432175990c1bb4e90bc13f609daa67a25d6
+  rev: 7a4b54b708ab88e0421097614f1acaa7a973c795
   pick: zsh-history-substring-search.*
 
 git module powerline:
@@ -32,7 +32,7 @@ git module powerline:
 
 git module powerline-fonts:
   url: https://github.com/powerline/fonts.git
-  rev: 6ac4c010afe4fc828f11aacac5e6b59289a8a4f6
+  rev: a44abd0e742ad6e7fd8d8bc4c3cad5155c9f3a92
 
 git module pidcat:
   url: https://github.com/JakeWharton/pidcat.git
