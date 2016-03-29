@@ -11,7 +11,7 @@ imports:
 
 git module zsh-syntax-highlighting:
   url: https://github.com/zsh-users/zsh-syntax-highlighting.git
-  rev: 28932316cca6004253ec57f5d87981c72be64e86
+  rev: bc7f8ea433adf3efd71a3e950e9a8dec846a1171
   pick:
     - '**/*.zsh'
     - '.version'
@@ -19,7 +19,7 @@ git module zsh-syntax-highlighting:
 
 git module zsh-history-substring-search:
   url: https://github.com/zsh-users/zsh-history-substring-search.git
-  rev: 7a4b54b708ab88e0421097614f1acaa7a973c795
+  rev: f5c164d4c3af1f5bd068ee10f88b4c7b3a1fd841
   pick: zsh-history-substring-search.*
 
 git module powerline:
@@ -37,12 +37,12 @@ git module powerline-fonts:
 git module pidcat:
   url: https://github.com/JakeWharton/pidcat.git
   pick: pidcat.py
-  rev: a6815e906a066b7b6e3ef93b989da52790174640
+  rev: f818e10526ca3f9edd7a12be47770a97953a7b50
 
 git module hk:
   url: https://github.com/heroku/hk.git
   pick: contrib/hk-zsh-completion.sh
-  rev: 406190e9c93802fb0a49b5c09611790aee05c491
+  rev: 9c27ee3bfe9f66aa13a74615442012f64c48ae03
 
 git module base16-shell:
   url: https://github.com/chriskempson/base16-shell.git
@@ -51,8 +51,8 @@ git module base16-shell:
 
 git module dotvim:
   url: https://github.com/yachi/dotvim.git
-  rev: 00d42faa816d3ccd980e9036dc0da61fcf7973d1
+  rev: 6605cbd0b84692e2c55a0d74e3881fe81d3f6d9c
 
 git module k:
   url: https://github.com/supercrabtree/k.git
-  rev: 2fd558e2cfe0eab51b3238358d24d16e10693fa6
+  rev: e2907799edf2ef575480d59bb067d2fd471783c2
