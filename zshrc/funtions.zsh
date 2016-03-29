@@ -21,9 +21,9 @@ function pg(){
 
 function v(){
   if [[ -z $@ ]]; then
-    vim
+    nvim
   else
-    vim -O "$@"
+    nvim -O "$@"
   fi
 }
 

@@ -84,7 +84,7 @@ source "$ZSH/oh-my-zsh.sh"
 # Customize to your needs...
 
 # some env stuff
-export EDITOR=$(which vim)
+export EDITOR=$(which nvim)
 
 # use bins from coreutils
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
