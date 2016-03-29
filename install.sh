@@ -55,6 +55,10 @@ symlink_to_home .sbtconfig
 symlink_to_home gitignore .gitignore
 symlink_to_home karabiner.xml Library/Application\ Support/Karabiner/private.xml
 
+mkdir -p "$HOME/.config"
+ln -s ~/.vim "$HOME/.config/nvim"
+ln -s ~/.vimrc "$HOME/.config/nvim/init.vim"
+
 test -d "$HOME/.zsh/functions" || mkdir -p "$HOME/.zsh/functions"
 cp -v peru/hk/contrib/hk-zsh-completion.sh ~/.zsh/functions/_hk
 
