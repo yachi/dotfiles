@@ -47,3 +47,13 @@ function aw() {
 function joinargs() {
   (IFS="$1"; shift && echo "$*")
 }
+
+function radar() {
+  size=${1:-256}
+  echo $size
+  dir="$(mktemp -d)"
+  key="rad_"
+  key+="$size"
+  key+="_png.*jpg"
+  (cd $dir;pwd;curl -s "http://www.hko.gov.hk/wxinfo/radars/radarc.htm?pv_mode=playback" -H "Cookie: r_level=r_level%3D1%26r_index%3D0; HKO_DefaultHomePage=nclf; HKO_Language=auto" --compressed | grep -o "$key" | parallel -j16 curl -s --compressed -O "http://www.hko.gov.hk/wxinfo/radars/{}" ; convert *.jpg $dir/"$size"radar.gif ;open -a /Applications/Safari.app $dir/"$size"radar.gif)
+}
