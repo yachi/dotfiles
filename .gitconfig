@@ -3,6 +3,7 @@
 [user]
   name = Yachi Lo
   email = yaachi@gmail.com
+  signingkey = D909EF8D
 [push]
   default = simple
 [core]
