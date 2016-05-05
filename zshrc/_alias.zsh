@@ -23,6 +23,11 @@ alias upgrade_vim_bundles="vim +NeoBundleUpdate"
 alias vv="/usr/local/bin/v"
 alias htop="sudo htop"
 alias howdoi="docker run --rm yachi/howdoi howdoi test string empty bash"
+alias sum="awk '{s+=$1} END {print s}'"
+
+# docker
+alias dc='docker-compose'
+alias drw='docker-compose run --rm web'
 
 # i like verbose
 alias rm="safe-rm -v "
