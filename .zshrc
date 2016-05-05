@@ -122,4 +122,4 @@ function reload-shell() {
 }
 
 # docker at home
-export DOCKER_HOST=localhost:5555
+# export DOCKER_HOST=localhost:5555
