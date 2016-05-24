@@ -34,3 +34,6 @@ alias drtw='docker-compose run -e RAILS_ENV=test --rm web'
 alias rm="safe-rm -v "
 alias ln="ln -v "
 alias cp="cp -v "
+
+# override
+alias bi='bundle check || bundle install'
