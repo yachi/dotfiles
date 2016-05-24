@@ -28,6 +28,7 @@ alias sum="awk '{s+=$1} END {print s}'"
 # docker
 alias dc='docker-compose'
 alias drw='docker-compose run --rm web'
+alias drtw='docker-compose run -e RAILS_ENV=test --rm web'
 
 # i like verbose
 alias rm="safe-rm -v "
