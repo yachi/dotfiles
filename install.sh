@@ -55,6 +55,10 @@ symlink_to_home .sbtconfig
 symlink_to_home gitignore .gitignore
 symlink_to_home karabiner.xml Library/Application\ Support/Karabiner/private.xml
 
+if [ ! -d ~/.iterm2 ]; then
+  symlink_to_home iterm2 .iterm2/
+fi
+
 mkdir -p "$HOME/.config"
 ln -s ~/.vim "$HOME/.config/nvim"
 ln -s ~/.vimrc "$HOME/.config/nvim/init.vim"
