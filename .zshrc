@@ -78,8 +78,14 @@ plugins=(
   catimg
 )
 
+function source_file() {
+  echo -n "$1"
+  source "$1"
+  echo -ne "$pc%\033[0K\r"
+}
+
 export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin
-source "$ZSH/oh-my-zsh.sh"
+source_file "$ZSH/oh-my-zsh.sh"
 
 # Customize to your needs...
 
@@ -108,10 +114,10 @@ setopt extendedglob
 
 function _load_custom_scripts(){
   for files in $DOTFILES/zshrc/^_*.zsh; do
-    source "$files"
+    source_file "$files"
   done
   for files in $DOTFILES/zshrc/_*.zsh; do
-    source "$files"
+    source_file "$files"
   done
 }
 
