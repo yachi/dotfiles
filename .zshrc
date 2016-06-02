@@ -79,7 +79,7 @@ plugins=(
 )
 
 function source_file() {
-  echo -n "$1"
+  echo -n "loading $1 ..."
   source "$1"
   echo -ne "$pc%\033[0K\r"
 }
