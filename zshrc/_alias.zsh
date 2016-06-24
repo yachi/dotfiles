@@ -38,3 +38,6 @@ alias cp="cp -v "
 
 # override
 alias bi='bundle check || bundle install'
+
+# mps-youtube
+alias playAGA='mpsyt pl PLLUX6ntupUMJ9d_OgeCAMdIAXX14cgTOv'
