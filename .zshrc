@@ -69,7 +69,6 @@ plugins=(
   knife
   nyan
   osx
-  per-directory-history
   pip
   rails
   rake-fast
