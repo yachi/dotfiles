@@ -26,6 +26,9 @@ alias htop="sudo htop"
 alias howdoi="docker run --rm yachi/howdoi howdoi test string empty bash"
 alias sum="awk '{s+=$1} END {print s}'"
 
+alias os="overcommit --sign"
+alias gup="OVERCOMMIT_DISABLE=1 git pull --rebase"
+
 # docker
 alias dc='docker-compose'
 alias drw='docker-compose run --rm web'
@@ -41,3 +44,6 @@ alias bi='bundle check || bundle install'
 
 # mps-youtube
 alias playAGA='mpsyt pl PLLUX6ntupUMJ9d_OgeCAMdIAXX14cgTOv'
+
+# android
+alias ai='adb -d install -r'

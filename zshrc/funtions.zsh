@@ -57,3 +57,19 @@ function radar() {
   key+="_png.*jpg"
   (cd $dir;pwd;curl -s "http://www.hko.gov.hk/wxinfo/radars/radarc.htm?pv_mode=playback" -H "Cookie: r_level=r_level%3D1%26r_index%3D0; HKO_DefaultHomePage=nclf; HKO_Language=auto" --compressed | grep -o "$key" | parallel -j16 curl -s --compressed -O "http://www.hko.gov.hk/wxinfo/radars/{}" ; convert *.jpg $dir/"$size"radar.gif ;open -a /Applications/Safari.app $dir/"$size"radar.gif)
 }
+
+function goup {
+  branch="$(git rev-parse --abbrev-ref HEAD)"
+  git checkout develop
+  git branch -D qa
+  OVERCOMMIT_DISABLE=1 git up
+  git checkout "$branch"
+}
+
+function gmqa {
+  branch="$(git rev-parse --abbrev-ref HEAD)"
+  git branch -D qa
+  OVERCOMMIT_DISABLE=1 git up
+  git checkout qa
+  git merge "$branch"
+}
