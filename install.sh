@@ -42,6 +42,7 @@ peru sync
 
 log "adding symlinks to $HOME"
 test -e "$HOME/.vim" || symlink_to_home peru/dotvim .vim
+symlink_to_home .curlrc
 symlink_to_home .vimrc
 symlink_to_home .zshrc
 symlink_to_home .tmux.conf
