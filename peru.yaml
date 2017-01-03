@@ -11,7 +11,7 @@ imports:
 
 git module zsh-syntax-highlighting:
   url: https://github.com/zsh-users/zsh-syntax-highlighting.git
-  rev: bc7f8ea433adf3efd71a3e950e9a8dec846a1171
+  rev: aac4a4423898fccbd1ab72c369ac09995a9139f1
   pick:
     - '**/*.zsh'
     - '.version'
@@ -19,7 +19,7 @@ git module zsh-syntax-highlighting:
 
 git module zsh-history-substring-search:
   url: https://github.com/zsh-users/zsh-history-substring-search.git
-  rev: f5c164d4c3af1f5bd068ee10f88b4c7b3a1fd841
+  rev: aae3388491c2312c4efb2e86bcb999927bb2900e
   pick: zsh-history-substring-search.*
 
 git module powerline:
@@ -28,7 +28,7 @@ git module powerline:
   pick:
     - powerline/bindings/zsh/powerline.zsh
     - powerline/bindings/tmux/powerline.conf
-  rev: 7ed55bb25c8d9ab3f96d63e83d11772c2fd07c9e
+  rev: 6e2e0b2f9221fbff117be3d190f9293b40ba64cd
 
 git module powerline-fonts:
   url: https://github.com/powerline/fonts.git
@@ -37,7 +37,7 @@ git module powerline-fonts:
 git module pidcat:
   url: https://github.com/JakeWharton/pidcat.git
   pick: pidcat.py
-  rev: f818e10526ca3f9edd7a12be47770a97953a7b50
+  rev: 44b4a106bb25776cbb551044b303520a07a51c1e
 
 git module hk:
   url: https://github.com/heroku/hk.git
@@ -46,13 +46,13 @@ git module hk:
 
 git module base16-shell:
   url: https://github.com/chriskempson/base16-shell.git
-  pick: base16-default.dark.sh
-  rev: 5acf5629a8bd186399a378c37c10507675525514
+  pick: scripts/base16-default-dark.sh
+  rev: 471707c20e48ea9554c06f1d910c91bd71693459
 
 git module dotvim:
   url: https://github.com/yachi/dotvim.git
-  rev: 6605cbd0b84692e2c55a0d74e3881fe81d3f6d9c
+  rev: 5cdcc37cf371499a1a46bf67e6c21135dc2a890c
 
 git module k:
   url: https://github.com/supercrabtree/k.git
-  rev: e2907799edf2ef575480d59bb067d2fd471783c2
+  rev: 1fa7c039d40684d39cb225599bda4a86a62e765d
