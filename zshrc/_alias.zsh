@@ -23,6 +23,8 @@ alias diff-highlight="/usr/local/share/git-core/contrib/diff-highlight/diff-high
 alias upgrade_vim_bundles="vim +NeoBundleUpdate"
 alias vv="/usr/local/bin/v"
 alias htop="sudo htop"
+alias t="trans"
+alias tc="trans :zh-TW+zh-CN"
 alias howdoi="docker run --rm yachi/howdoi howdoi test string empty bash"
 alias sum="awk '{s+=$1} END {print s}'"
 
